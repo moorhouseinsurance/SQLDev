@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Reports", "Reports.rptproj", "{89E3FB1F-8937-4BB3-A7E2-49D40B2BA717}"
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Reports", "..\SSRS Reports\Reports\Reports.rptproj", "{89E3FB1F-8937-4BB3-A7E2-49D40B2BA717}"
 EndProject
-Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Bordereaux", "..\Bordereaux\Bordereaux.rptproj", "{0BA224BC-43BE-4B38-8B15-A277508763A3}"
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Bordereaux", "..\SSRS Reports\Bordereaux\Bordereaux.rptproj", "{0BA224BC-43BE-4B38-8B15-A277508763A3}"
 EndProject
-Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DW", "..\DW\DW.rptproj", "{B3BE61B6-967B-47C3-B57B-D238B9266521}"
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DW", "..\SSRS Reports\DW\DW.rptproj", "{B3BE61B6-967B-47C3-B57B-D238B9266521}"
 EndProject
-Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "End of Day Data", "..\End of Day Data\End of Day Data.rptproj", "{3CFD1EA3-C4F8-41A5-9FBD-BB29889F6AA2}"
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "End of Day Data", "..\SSRS Reports\End of Day Data\End of Day Data.rptproj", "{3CFD1EA3-C4F8-41A5-9FBD-BB29889F6AA2}"
 EndProject
-Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Scripts", "..\Scripts\Scripts.rptproj", "{ABB1729D-C8C1-4113-9BC8-9CE71EA966CD}"
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Scripts", "..\SSRS Reports\Scripts\Scripts.rptproj", "{ABB1729D-C8C1-4113-9BC8-9CE71EA966CD}"
 EndProject
-Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Restricted", "..\Restricted\Restricted.rptproj", "{5A78FABE-15A0-4E5E-898D-7E2CE41CC931}"
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Restricted", "..\SSRS Reports\Restricted\Restricted.rptproj", "{5A78FABE-15A0-4E5E-898D-7E2CE41CC931}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
