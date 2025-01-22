@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<screenConfig id="mliab" productType="195" desc="Tradesman Liability">
+ <debugPanel>false</debugPanel>
+ <quotePanelSize>3</quotePanelSize>
+ <showAssumptions>0</showAssumptions>
+ <assumptionEmail></assumptionEmail>
+ <displayCoverStartDate>true</displayCoverStartDate>
+ <yourDetailsEmail>true</yourDetailsEmail>
+ <nBSaveOnContinue>false</nBSaveOnContinue>
+ <nBSaveExitButton>false</nBSaveExitButton>
+ <yourDetailsDateEstablished>true</yourDetailsDateEstablished>
+ <lastVisitDisplay>true</lastVisitDisplay>
+ <updateContactNumber>true</updateContactNumber>
+ <accountConfirmationEvent>true</accountConfirmationEvent>
+ <riskDataCompletionEvent>true</riskDataCompletionEvent>
+ <b2BExitMidQuoteEvent>true</b2BExitMidQuoteEvent>
+</screenConfig>

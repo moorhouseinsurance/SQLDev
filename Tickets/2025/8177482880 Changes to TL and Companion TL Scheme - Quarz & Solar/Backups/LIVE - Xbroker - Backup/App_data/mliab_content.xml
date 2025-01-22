@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<screenContent id="mliab" productType="195" desc="Tradesman Liability">
+ <page id="assumptions" name="assumptions.aspx">
+     <pageHeading type="html">Assumptions</pageHeading>
+     <pageDescription type="html"></pageDescription>
+     <declineMessage type="html"></declineMessage>
+   <assumptionList type="html">
+     In order to keep the questions we need to ask to a minimum, we have made the following assumptions. Please take the time to read through these assumptions as they will form part of your insurance contract.
+     <ol class="assumptionsOL">
+       <li>You do not carry out any demolition work other than as part of a building contract</li>
+       <li>You do not work on aircraft, hovercraft, aerospace systems, watercraft, railways, underground or underwater </li>
+       <li>
+         You do not work on power stations, nuclear installation or establishments, refineries, bulk storage or premises in oil, gas or
+         chemical industries or offshore structures
+       </li>
+       <li>
+         You do not work with silica, asbestos or substances containing asbestos nor do you work with acids, gases, explosives,
+         radioactive or similar dangerous liquids or chemicals
+       </li>
+       <li>
+         No proprietor, proposer, director or partner of the business or practice has had a proposal refused or declined, had an
+         insurance cancelled, or has had special terms imposed on an insurance
+       </li>
+       <li>
+         No proposer, director or partner of the business or practice has ever been declared bankrupt/insolvent, or the subject of
+         bankruptcy proceedings, or been the subject of a County Court Judgement (or the Scottish equivalent)
+       </li>
+       <li>
+         You or any partner or director have never been convicted for any criminal offence involving dishonesty, arson, theft or wilful
+         damage or for a breach of any statute relating to health and safety at work or has any prosecution pending or outstanding
+       </li>
+     </ol>
+     If you agree with all the assumptions above, please click "Yes" to continue. If you do not agree with any of the assumptions then click "No".
+   </assumptionList>
+ </page>
+ <page id="trddtail" name="trddtail.aspx">
+     <pageHeading type="html">Trade Details</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <WorkshopPercent type="text" name="USER_MLIAB_TRDDTAIL__WORKSHOPPERCENT__0">
+         <description>What percentage of your work is workshop based?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </WorkshopPercent>
+     <Workshop type="yesno" name="USER_MLIAB_TRDDTAIL__WORKSHOP__0">
+         <description>Do you have a workshop?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Workshop>
+     <EmpsUsing type="text" name="USER_MLIAB_TRDDTAIL__EMPSUSING__0">
+         <description>How many employees use this machinery?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </EmpsUsing>
+     <FixedMachinery type="yesno" name="USER_MLIAB_TRDDTAIL__FIXEDMACHINERY__0">
+         <description>Do you use any Fixed powered woodworking machinery?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </FixedMachinery>
+     <CavityWall type="yesno" name="USER_MLIAB_TRDDTAIL__CAVITYWALL__0">
+         <description>Do you Inject Cavity Wall?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </CavityWall>
+     <Solvent type="yesno" name="USER_MLIAB_TRDDTAIL__SOLVENT__0">
+         <description>Do you carry out any process of pressure injection involving the use of white spirit or similar carrier solvent?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Solvent>
+     <Waterproofing type="yesno" name="USER_MLIAB_TRDDTAIL__WATERPROOFING__0">
+         <description>Do you carry out any form of structural waterproofing?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Waterproofing>
+     <Roofing type="yesno" name="USER_MLIAB_TRDDTAIL__ROOFING__0">
+         <description>Do you only work on slate, thatched, tiled and flat fibreglass / resin roofs?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Roofing>
+     <Ventilation type="yesno" name="USER_MLIAB_TRDDTAIL__VENTILATION__0">
+         <description>Do you do any VENTILATION work?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Ventilation>
+     <CorgiReg type="yesno" name="USER_MLIAB_TRDDTAIL__CORGIREG__0">
+         <description>Are you Gas Safe registered?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </CorgiReg>
+     <RoadSurfacing type="yesno" name="USER_MLIAB_TRDDTAIL__ROADSURFACING__0">
+         <description>Do you do any ROAD SURFACING?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </RoadSurfacing>
+     <Paving type="yesno" name="USER_MLIAB_TRDDTAIL__PAVING__0">
+         <description>Do you work on paving, drives, paths or patios?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Paving>
+     <MaxDepth type="dropdown" name="USER_MLIAB_TRDDTAIL__MAXDEPTH_ID__0">
+         <description>What is the maximum DEPTH you work to (in metres)?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </MaxDepth>
+     <SecondaryRisk type="dropdown" name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0">
+         <description>Secondary Risk Trade / Industry</description>
+         <width>255</width>
+         <subHeading></subHeading>
+     </SecondaryRisk>
+     <PrimaryRisk type="dropdown" name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0">
+         <description>Primary Risk Trade / Industry</description>
+         <width>255</width>
+         <subHeading></subHeading>
+     </PrimaryRisk>
+     <PresentInsurer type="dropdown" name="USER_MLIAB_TRDDTAIL__PRESENTINSURER_ID__0">
+         <description>Present Insurer</description>
+         <width>255</width>
+         <subHeading></subHeading>
+     </PresentInsurer>
+     <CoverStartDate type="date" name="USER_MLIAB_TRDDTAIL__COVERSTARTDATE__0">
+         <description>Cover Start Date</description>
+         <subHeading>Trade</subHeading>
+     </CoverStartDate>
+     <Phase type="yesno" name="USER_MLIAB_TRDDTAIL__PHASE__0">
+         <description>Do you work / install 3 phase?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Phase>
+     <EfficacyCover type="yesno" name="USER_MLIAB_TRDDTAIL__EFFICACYCOVER__0">
+         <description>Do you require Efficacy cover?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </EfficacyCover>
+     <HistoryID type="text" name="USER_MLIAB_TRDDTAIL__HISTORYID__0">
+         <description>HistoryID</description>
+         <width></width>
+         <subHeading></subHeading>
+     </HistoryID>
+     <PolicyDetailsID type="text" name="USER_MLIAB_TRDDTAIL__POLICYDETAILSID__0">
+         <description>Policy Details ID</description>
+         <width></width>
+         <subHeading></subHeading>
+     </PolicyDetailsID>
+ </page>
+ <page id="cinfo" name="cinfo.aspx">
+     <pageHeading type="html">Client Information / Cover</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <WrittenRA type="yesno" name="USER_MLIAB_CINFO__WRITTENRA__0">
+         <description>Do you complete Risk Assessments &amp; Method Statements where appropriate?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </WrittenRA>
+     <HealthSafety type="yesno" name="USER_MLIAB_CINFO__HEALTHSAFETY__0">
+         <description>Does your business comply with HSE rules and regulations?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </HealthSafety>
+     <WhichAssoci type="dropdown" name="USER_MLIAB_CINFO__WHICHASSOCI_ID__0">
+         <description>Please select which one</description>
+         <width></width>
+         <subHeading></subHeading>
+     </WhichAssoci>
+     <AssociMem type="yesno" name="USER_MLIAB_CINFO__ASSOCIMEM__0">
+         <description>Are you a member of any association or federation?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading>Safety</subHeading>
+     </AssociMem>
+     <MaxHeight type="dropdown" name="USER_MLIAB_CINFO__MAXHEIGHT_ID__0">
+         <description>What is the maximum height you work at (in meters)?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </MaxHeight>
+     <HeatPercent type="text" name="USER_MLIAB_CINFO__HEATPERCENT__0">
+         <description>What percentage?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </HeatPercent>
+     <Heat type="yesno" name="USER_MLIAB_CINFO__HEAT__0">
+         <description>Do you use heat?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Heat>
+     <WorkSoley type="yesno" name="USER_MLIAB_CINFO__WORKSOLEY__0">
+         <description>Do you work solely on Private Dwelling Houses, Offices, Shops only?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading>Conditions</subHeading>
+     </WorkSoley>
+     <PsDrawings type="currency" name="USER_MLIAB_CINFO__PSDRAWINGS__0">
+         <description>What are the principals drawings?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </PsDrawings>
+     <SupervisorWR type="currency" name="USER_MLIAB_CINFO__SUPERVISORWR__0">
+         <description>Total Supervisor / Yardmen wages</description>
+         <width></width>
+         <subHeading></subHeading>
+     </SupervisorWR>
+     <LabourWR type="currency" name="USER_MLIAB_CINFO__LABOURWR__0">
+         <description>Labour Only Wageroll</description>
+         <width></width>
+         <subHeading></subHeading>
+     </LabourWR>
+     <BonaFideWR type="currency" name="USER_MLIAB_CINFO__BONAFIDEWR__0">
+         <description>Bona Fide Wageroll  (Supply and Fix)</description>
+         <width></width>
+         <subHeading></subHeading>
+     </BonaFideWR>
+     <AnnualTurnover type="currency" name="USER_MLIAB_CINFO__ANNUALTURNOVER__0">
+         <description>What is your Estimated Annual Turnover?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </AnnualTurnover>
+     <YrsExp type="text" name="USER_MLIAB_CINFO__YRSEXP__0">
+         <description>How many years experience do you have?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </YrsExp>
+     <yrs type="text" name="USER_MLIAB_CINFO__YRS__0">
+         <description>How many years have you been established?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </yrs>
+     <YrEstablished type="text" name="USER_MLIAB_CINFO__YRESTABLISHED__0">
+         <description>What year were you established?</description>
+         <width></width>
+         <subHeading>Company Information</subHeading>
+     </YrEstablished>
+     <NonManualEmps type="text" name="USER_MLIAB_CINFO__NONMANUALEMPS__0">
+         <description>Total number of non-manual employees?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </NonManualEmps>
+     <ManualEmps type="text" name="USER_MLIAB_CINFO__MANUALEMPS__0">
+         <description>Total number of employees working manually, including labour only contractors?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </ManualEmps>
+     <NonManuDirec type="text" name="USER_MLIAB_CINFO__NONMANUDIREC__0">
+         <description>Total number of non-manual directors?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </NonManuDirec>
+     <ManualDirectors type="text" name="USER_MLIAB_CINFO__MANUALDIRECTORS__0">
+         <description>Total number of directors working manually?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </ManualDirectors>
+     <TotalPandP type="text" name="USER_MLIAB_CINFO__TOTALPANDP__0">
+         <description>Total number of Partners and Principals?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </TotalPandP>
+     <ManualWork type="yesno" name="USER_MLIAB_CINFO__MANUALWORK__0">
+         <description>Do you carry out any manual work?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </ManualWork>
+     <CompanyStatus type="dropdown" name="USER_MLIAB_CINFO__COMPANYSTATUS_ID__0">
+         <description>What is your Company Status?</description>
+         <width></width>
+         <subHeading>Client Information</subHeading>
+     </CompanyStatus>
+     <PubLiabLimit type="dropdown" name="USER_MLIAB_CINFO__PUBLIABLIMIT_ID__0">
+         <description>What Public Liability Limit do you require?</description>
+         <width></width>
+         <subHeading>Cover</subHeading>
+     </PubLiabLimit>
+     <ClericalPAYE type="currency" name="USER_MLIAB_CINFO__CLERICALPAYE__0">
+         <description>PAYE Wageroll for Clerical Employees</description>
+         <width></width>
+         <subHeading></subHeading>
+     </ClericalPAYE>
+     <ManualPAYE type="currency" name="USER_MLIAB_CINFO__MANUALPAYE__0">
+         <description>Direct Manual Wageroll (PAYE)</description>
+         <width></width>
+         <subHeading>Wagerolls</subHeading>
+     </ManualPAYE>
+     <ToolValue type="dropdown" name="USER_MLIAB_CINFO__TOOLVALUE_ID__0">
+         <description>What value of tools cover would you like?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </ToolValue>
+     <ToolCover type="yesno" name="USER_MLIAB_CINFO__TOOLCOVER__0">
+         <description>Do you require tools cover?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </ToolCover>
+     <EmployeeTool type="yesno" name="USER_MLIAB_CINFO__EMPLOYEETOOL__0">
+         <description>Do you want cover for your employee's tools?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </EmployeeTool>
+     <ManDays type="text" name="USER_MLIAB_CINFO__MANDAYS__0">
+         <description>How many man days per year?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </ManDays>
+     <TempInsurance type="yesno" name="USER_MLIAB_CINFO__TEMPINSURANCE__0">
+         <description>Do you require temporary employees insurance?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </TempInsurance>
+     <TotalEmployees type="text" name="USER_MLIAB_CINFO__TOTALEMPLOYEES__0">
+         <description>Total number of employees</description>
+         <width></width>
+         <subHeading></subHeading>
+     </TotalEmployees>
+     <ERNRef type="text" name="USER_MLIAB_CINFO__ERNREF__0">
+         <description>What is your Employers Reference Number?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </ERNRef>
+     <SubsidYN type="yesno" name="USER_MLIAB_CINFO__SUBSIDYN__0">
+         <description>Do you have any subsidiary</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </SubsidYN>
+     <includeYN type="yesno" name="USER_MLIAB_CINFO__INCLUDEYN__0">
+         <description>Do you want to include these subs</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </includeYN>
+     <ERNExempt type="checkbox" name="USER_MLIAB_CINFO__ERNEXEMPT__0">
+         <description>ERNExempt</description>
+         <subHeading></subHeading>
+     </ERNExempt>
+ </page>
+ <page id="pandp" name="pandp.aspx">
+     <pageHeading type="html">Partners and Principals</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <Status type="dropdown" name="USER_MLIAB_PANDP__STATUS_ID__0">
+         <description>What is the Status of the Partner?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Status>
+     <Surname type="text" name="USER_MLIAB_PANDP__SURNAME__0">
+         <description>What is the Surname of the Partner?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Surname>
+     <Forename type="text" name="USER_MLIAB_PANDP__FORENAME__0">
+         <description>What is the Forename of the Partner?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Forename>
+     <Title type="dropdown" name="USER_MLIAB_PANDP__TITLE_ID__0">
+         <description>What is the Title of the Partner?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Title>
+ </page>
+ <page id="subsid" name="subsid.aspx">
+     <pageHeading type="html">Subsidiaries</pageHeading>
+     <pageDescription type="html"></pageDescription>
+     <SubsidInsurer type="dropdown" name="USER_MLIAB_SUBSID__SUBSIDINSURER_ID__0">
+         <description>Who is the current insurer for subs</description>
+         <width></width>
+         <subHeading></subHeading>
+     </SubsidInsurer>
+     <SubsidERN type="text" name="USER_MLIAB_SUBSID__SUBSIDERN__0">
+         <description>What is the Employers Ref</description>
+         <width></width>
+         <subHeading></subHeading>
+     </SubsidERN>
+     <SubsidName type="text" name="USER_MLIAB_SUBSID__SUBSIDNAME__0">
+         <description>What is the name of the Subsidiary company?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </SubsidName>
+ </page>
+ <page id="car" name="car.aspx">
+     <pageHeading type="html">Contractors All Risk</pageHeading>
+     <pageDescription type="html"></pageDescription>
+     <maxvlaueAOI type="currency" name="USER_MLIAB_CAR__MAXVLAUEAOI__0">
+         <description>What is the Maximum Value of any one item of Hired in Plant?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </maxvlaueAOI>
+     <totvaluehire type="currency" name="USER_MLIAB_CAR__TOTVALUEHIRE__0">
+         <description>What is the total value of Hired in Plant and Machinery?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </totvaluehire>
+     <hirecharges type="currency" name="USER_MLIAB_CAR__HIRECHARGES__0">
+         <description>What do you spend on hire charges over 12 months?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </hirecharges>
+     <coverhireplant type="yesno" name="USER_MLIAB_CAR__COVERHIREPLANT__0">
+         <description>Do you require cover for Hired in Plant and Machinery?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </coverhireplant>
+     <valueplant type="currency" name="USER_MLIAB_CAR__VALUEPLANT__0">
+         <description>What is the value of your own Plant and Machinery?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </valueplant>
+     <coverplant type="yesno" name="USER_MLIAB_CAR__COVERPLANT__0">
+         <description>Do you require cover for your own Plant and Machinery?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </coverplant>
+     <onecontract type="currency" name="USER_MLIAB_CAR__ONECONTRACT__0">
+         <description>What is the maximum value of any one contract?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </onecontract>
+     <Contractsworks type="yesno" name="USER_MLIAB_CAR__CONTRACTSWORKS__0">
+         <description>Do you Require Contract Works Cover?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Contractsworks>
+ </page>
+ <page id="accincom" name="accincom.aspx">
+     <pageHeading type="html">Personal Accident and Income Protection</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <AccidentCover type="dropdown" name="USER_MLIAB_ACCINCOM__ACCIDENTCOVER_ID__0">
+         <description>What level of Personal Accident would you like to add?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </AccidentCover>
+     <CoverYN type="yesno" name="USER_MLIAB_ACCINCOM__COVERYN__0">
+         <description>Would you like to include Personal Accident and Income Protection Cover?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </CoverYN>
+     <IncomeCover type="dropdown" name="USER_MLIAB_ACCINCOM__INCOMECOVER_ID__0">
+         <description>What Level of Income protection would you like to add?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </IncomeCover>
+     <PeopleNum type="text" name="USER_MLIAB_ACCINCOM__PEOPLENUM__0">
+         <description>What is the total number of people you want to cover for Personal Accident and Income Protection?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </PeopleNum>
+ </page>
+ <page id="papeople" name="papeople.aspx">
+     <pageHeading type="html">Personal Accident and Income People</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <UKResidentYN type="yesno" name="USER_MLIAB_PAPEOPLE__UKRESIDENTYN__0">
+         <description>Are you Permanently resident in the UK?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </UKResidentYN>
+     <DateOfBirth type="date" name="USER_MLIAB_PAPEOPLE__DATEOFBIRTH__0">
+         <description>Date Of Birth</description>
+         <subHeading></subHeading>
+     </DateOfBirth>
+     <Surname type="text" name="USER_MLIAB_PAPEOPLE__SURNAME__0">
+         <description>Surname</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Surname>
+     <Forenames type="text" name="USER_MLIAB_PAPEOPLE__FORENAMES__0">
+         <description>Forenames</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Forenames>
+     <Title type="dropdown" name="USER_MLIAB_PAPEOPLE__TITLE_ID__0">
+         <description>Title</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Title>
+ </page>
+ <page id="profindm" name="profindm.aspx">
+     <pageHeading type="html">Professional Indemnity</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <PILevel type="dropdown" name="USER_MLIAB_PROFINDM__PILEVEL_ID__0">
+         <description>Please select the level of Professional Indemnity cover required.</description>
+         <width></width>
+         <subHeading></subHeading>
+     </PILevel>
+     <PIYN type="yesno" name="USER_MLIAB_PROFINDM__PIYN__0">
+         <description>Do you require Professional Indemnity Insurance?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </PIYN>
+     <DesignYN type="yesno" name="USER_MLIAB_PROFINDM__DESIGNYN__0">
+         <description>Do you offer advice, design or certification activities?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </DesignYN>
+ </page>
+ <page id="bussupp" name="bussupp.aspx">
+     <pageHeading type="html">Business Support</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <HandSDetails type="text" name="USER_MLIAB_BUSSUPP__HANDSDETAILS__0">
+         <description>If yes, please provide details</description>
+         <width></width>
+         <subHeading></subHeading>
+     </HandSDetails>
+     <HandS type="yesno" name="USER_MLIAB_BUSSUPP__HANDS__0">
+         <description>prosecution under the health and safety</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </HandS>
+     <TribunalDetails type="text" name="USER_MLIAB_BUSSUPP__TRIBUNALDETAILS__0">
+         <description>If yes, please provide details</description>
+         <width></width>
+         <subHeading></subHeading>
+     </TribunalDetails>
+     <Tribunal type="yesno" name="USER_MLIAB_BUSSUPP__TRIBUNAL__0">
+         <description>employment tribunal or court proceedings</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Tribunal>
+     <DiscussDetails type="text" name="USER_MLIAB_BUSSUPP__DISCUSSDETAILS__0">
+         <description>If yes, please provide details</description>
+         <width></width>
+         <subHeading></subHeading>
+     </DiscussDetails>
+     <Discussions type="yesno" name="USER_MLIAB_BUSSUPP__DISCUSSIONS__0">
+         <description>discussions with any party in respect of</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Discussions>
+     <ReguDetails type="text" name="USER_MLIAB_BUSSUPP__REGUDETAILS__0">
+         <description>If yes, please provide details</description>
+         <width></width>
+         <subHeading></subHeading>
+     </ReguDetails>
+     <Regulations type="yesno" name="USER_MLIAB_BUSSUPP__REGULATIONS__0">
+         <description>breaching any employment regulations</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Regulations>
+     <RedunDetails type="text" name="USER_MLIAB_BUSSUPP__REDUNDETAILS__0">
+         <description>If yes, please provide details</description>
+         <width></width>
+         <subHeading></subHeading>
+     </RedunDetails>
+     <Redundancies type="yesno" name="USER_MLIAB_BUSSUPP__REDUNDANCIES__0">
+         <description>made any redundancies</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </Redundancies>
+     <EmpDisDetails type="text" name="USER_MLIAB_BUSSUPP__EMPDISDETAILS__0">
+         <description>If yes, please provide details</description>
+         <width></width>
+         <subHeading></subHeading>
+     </EmpDisDetails>
+     <EmpDispute type="yesno" name="USER_MLIAB_BUSSUPP__EMPDISPUTE__0">
+         <description>employment dispute claim</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </EmpDispute>
+     <Emps type="text" name="USER_MLIAB_BUSSUPP__EMPS__0">
+         <description>How many employees do you have?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Emps>
+     <BusSuppCover type="yesno" name="USER_MLIAB_BUSSUPP__BUSSUPPCOVER__0">
+         <description>Do you require Business Support Cover?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading></subHeading>
+     </BusSuppCover>
+ </page>
+ <page id="clmsum" name="clmsum.aspx">
+     <pageHeading type="html">Claim Summary</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <Incidents type="yesno" name="USER_MLIAB_CLMSUM__INCIDENTS__0">
+         <description>Have you had any losses or incidents that have or could have given rise to claims in the past 5 years?</description>
+         <yesText></yesText>
+         <noText></noText>
+         <subHeading>Claim Details</subHeading>
+     </Incidents>
+ </page>
+ <page id="clmdtail" name="clmdtail.aspx">
+     <pageHeading type="html">Claim Detail</pageHeading>
+     <pageDescription type="html">Enter details for each claim or loss and click 'Add'. When all claims or losses have been added click 'Continue' to proceed.</pageDescription>
+     <Details type="text" name="USER_MLIAB_CLMDTAIL__DETAILS__0">
+         <description>Please provide details:</description>
+         <width>250</width>
+         <subHeading>Confirmation</subHeading>
+         <rows></rows>
+     </Details>
+     <Outstanding type="currency" name="USER_MLIAB_CLMDTAIL__OUTSTANDING__0">
+         <description>What is the accident / loss amount outstanding?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Outstanding>
+     <Paid type="currency" name="USER_MLIAB_CLMDTAIL__PAID__0">
+         <description>What is the accident / loss amount paid?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Paid>
+     <Date type="date" name="USER_MLIAB_CLMDTAIL__DATE__0">
+         <description>What is the claim accident / loss date?</description>
+         <subHeading></subHeading>
+     </Date>
+     <Type type="dropdown" name="USER_MLIAB_CLMDTAIL__TYPE_ID__0">
+         <description>What is the type of claim?</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Type>
+ </page>
+ <page id="assump" name="assump.aspx">
+     <pageHeading type="html">Assumptions</pageHeading>
+     <pageDescription type="html">Please answer ALL the questions accurately, as incorrect information may invalidate your insurance should you take out a policy.</pageDescription>
+     <Demolition type="dropdown" name="USER_MLIAB_ASSUMP__DEMOLITION_ID__0">
+         <description>1. You do not carry out any demolition work other than as part of a building contract</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Demolition>
+     <Convicted type="dropdown" name="USER_MLIAB_ASSUMP__CONVICTED_ID__0">
+         <description>7. You or any partner or director have never been convicted for any criminal offence involving dishonesty, arson, theft or wilful damage or for a breach of any statute relating to health and safety at work or has any prosecution pending or outstanding</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Convicted>
+     <Bankrupt type="dropdown" name="USER_MLIAB_ASSUMP__BANKRUPT_ID__0">
+         <description>6. No proposer, director or partner of the business or practice has ever been declared bankrupt/insolvent, or the subject of bankruptcy proceedings, or been the subject of a County Court Judgement (or the Scottish equivalent)</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Bankrupt>
+     <Refused type="dropdown" name="USER_MLIAB_ASSUMP__REFUSED_ID__0">
+         <description>5. No proprietor, proposer, director or partner of the business or practice has had a proposal refused or declined, had an insurance cancelled, or has had special terms imposed on an insurance</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Refused>
+     <Asbestos type="dropdown" name="USER_MLIAB_ASSUMP__ASBESTOS_ID__0">
+         <description>4. You do not work with silica, asbestos or substances containing asbestos nor do you work with acids, gases, explosives, radioactive or similar dangerous liquids or chemicals </description>
+         <width></width>
+         <subHeading></subHeading>
+     </Asbestos>
+     <PowerStations type="dropdown" name="USER_MLIAB_ASSUMP__POWERSTATIONS_ID__0">
+         <description>3. You do not work on power stations, nuclear installation or establishments, refineries, bulk storage or premises in oil, gas or chemical industries or offshore structures</description>
+         <width></width>
+         <subHeading></subHeading>
+     </PowerStations>
+     <Aircraft type="dropdown" name="USER_MLIAB_ASSUMP__AIRCRAFT_ID__0">
+         <description>2. You do not work on aircraft, hovercraft, aerospace systems, watercraft, railways, underground or underwater</description>
+         <width></width>
+         <subHeading></subHeading>
+     </Aircraft>
+	 <PPE type="dropdown" name="USER_MLIAB_ASSUMP__PPE_ID__0">
+         <description>9. Please confirm that PPE (Personal Protective Equipment) is issued to all employees who require it and the process is fully documented and reviewed</description>
+         <width></width>
+         <subHeading></subHeading>
+     </PPE>
+     <StaffTraining type="dropdown" name="USER_MLIAB_ASSUMP__STAFFTRAINING_ID__0">
+         <description>8. Please confirm that you conduct ongoing staff training to all employees, and this training is documented/recorded</description>
+         <width></width>
+         <subHeading></subHeading>
+     </StaffTraining>
+ </page>
+  <page id="statementoffact" name="statementoffact.aspx">
+    <pageHeading type="html"></pageHeading>
+    <pageDescription type="html"></pageDescription>
+    <insuredName type="label" name="lstrInsuredName">
+      <description></description>
+    </insuredName>
+    <business type="label" name="lstrBusiness">
+      <description></description>
+    </business>
+    <clientName type="label" name="lstrClientName">
+      <description></description>
+    </clientName>
+    <postalAddress type="label" name="lstrPostalAddress">
+      <description></description>
+    </postalAddress>
+    <insurer type="label" name="lstrInsurer">
+      <description></description>
+    </insurer>
+    <quoteReference type="label" name="lstrQuoteReference">
+      <description></description>
+    </quoteReference>
+    <sofMainText type="html" name="sofMainText"></sofMainText>
+    <lobHeadingColumn1 type="label" name="lstrLOBHeadingColumn1">
+      <description></description>
+    </lobHeadingColumn1>
+    <lobHeadingColumn2 type="label" name="lstrLOBHeadingColumn2">
+      <description></description>
+    </lobHeadingColumn2>
+    <declarationText type="html" name="declarationText">
+      <table>
+        <tr>
+          <td>
+            <b>Assumptions</b>
+          </td>
+        </tr>
+      </table>
+      <br></br>
+      <ol class="assumptionsOL">
+        <li>You do not carry out any demolition work other than as part of a building contract</li>
+        <li>You do not work on aircraft, hovercraft, aerospace systems, watercraft, railways, underground or underwater </li>
+        <li>
+          You do not work on power stations, nuclear installation or establishments, refineries, bulk storage or premises in oil, gas or
+          chemical industries or offshore structures
+        </li>
+        <li>
+          You do not work with silica, asbestos or substances containing asbestos nor do you work with acids, gases, explosives,
+          radioactive or similar dangerous liquids or chemicals
+        </li>
+        <li>
+          No proprietor, proposer, director or partner of the business or practice has had a proposal refused or declined, had an
+          insurance cancelled, or has had special terms imposed on an insurance
+        </li>
+        <li>
+          No proposer, director or partner of the business or practice has ever been declared bankrupt/insolvent, or the subject of
+          bankruptcy proceedings, or been the subject of a County Court Judgement (or the Scottish equivalent)
+        </li>
+        <li>
+          You or any partner or director have never been convicted for any criminal offence involving dishonesty, arson, theft or wilful
+          damage or for a breach of any statute relating to health and safety at work or has any prosecution pending or outstanding
+        </li>
+		<li>Please confirm that you conduct ongoing staff training to all employees, and this training is documented/recorded </li>
+		<li>Please confirm that PPE (Personal Protective Equipment) is issued to all employees who require it and the process is fully
+     		documented and reviewed
+		</li>
+      </ol>
+    </declarationText>
+    <dataProtectionText type="html" name="dataProtectionText"></dataProtectionText>
+  </page>
+
+</screenContent>

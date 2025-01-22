@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<screenLOB id="mliab" productType="195" desc="Tradesman Liability" projectType="1">
+ <page id="start" name="start.aspx" path="~/mliab/start.aspx" order="1" type="s" included="true" parent=""></page>
+ <page id="yourdetails" name="yourdetails.aspx" path="~/yourdetails.aspx" order="2" type="s" included="true" parent=""></page>
+ <page id="trddtail" name="trddtail.aspx" path="~/mliab/trddtail.aspx" order="3" type="s" included="true" parent="">
+     <userObject tableName="USER_MLIAB_TRDDTAIL" desc="Trade Details" required="true" primaryKey="MLIAB_TRDDTAIL_ID" controlFocus="USER_MLIAB_TRDDTAIL__COVERSTARTDATE__0_cboDay">
+         <MLIAB_TRDDTAIL_ID>NEW</MLIAB_TRDDTAIL_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <POLICY_DETAILS_ID>SESSION</POLICY_DETAILS_ID>
+         <HISTORYID decimalPlaces="0" currency="false">NULL</HISTORYID>
+         <POLICYDETAILSID decimalPlaces="0" currency="false">NULL</POLICYDETAILSID>
+         <COVERSTARTDATE viewDesc="Cover Start Date" policyTerm="3">NULL</COVERSTARTDATE>
+         <PRESENTINSURER_ID>NULL</PRESENTINSURER_ID>
+         <PRESENTINSURER_DEBUG viewDesc="Present Insurer"></PRESENTINSURER_DEBUG>
+         <PRIMARYRISK_ID>NULL</PRIMARYRISK_ID>
+         <PRIMARYRISK_DEBUG viewDesc="Primary Risk Trade / Industry"></PRIMARYRISK_DEBUG>
+         <SECONDARYRISK_ID>NULL</SECONDARYRISK_ID>
+         <SECONDARYRISK_DEBUG viewDesc="Secondary Risk Trade / Industry"></SECONDARYRISK_DEBUG>
+         <PHASE viewDesc="Do you work / install 3 phase?">NULL</PHASE>
+         <EFFICACYCOVER viewDesc="Do you require Efficacy cover?">NULL</EFFICACYCOVER>
+         <MAXDEPTH_ID>NULL</MAXDEPTH_ID>
+         <MAXDEPTH_DEBUG viewDesc="What is the maximum DEPTH you work to?"></MAXDEPTH_DEBUG>
+         <PAVING viewDesc="Do you work on paving, drives, paths or patios?">NULL</PAVING>
+         <ROADSURFACING viewDesc="Do you do any ROAD SURFACING?">NULL</ROADSURFACING>
+         <CORGIREG viewDesc="Are you Gas Safe registered?">NULL</CORGIREG>
+         <VENTILATION viewDesc="Do you do any VENTILATION work?">NULL</VENTILATION>
+         <ROOFING viewDesc="Do you only work on slate, thatched, tiled">NULL</ROOFING>
+         <WATERPROOFING viewDesc="Do you carry out any form of structural">NULL</WATERPROOFING>
+         <SOLVENT viewDesc="Do you carry out any process of pressure">NULL</SOLVENT>
+         <CAVITYWALL viewDesc="Do you Inject Cavity Wall?">NULL</CAVITYWALL>
+         <FIXEDMACHINERY viewDesc="Do you use any Fixed powered">NULL</FIXEDMACHINERY>
+         <EMPSUSING viewDesc="How many employees use this machinery?" decimalPlaces="0" currency="false">NULL</EMPSUSING>
+         <WORKSHOP viewDesc="Do you have a workshop?">NULL</WORKSHOP>
+         <WORKSHOPPERCENT viewDesc="What percentage of your work is workshop based?" decimalPlaces="0" currency="false">NULL</WORKSHOPPERCENT>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+ </page>
+ <page id="cinfo" name="cinfo.aspx" path="~/mliab/cinfo.aspx" order="4" type="s" included="true" parent="">
+     <userObject tableName="USER_MLIAB_CINFO" desc="Client Information / Cover" required="true" primaryKey="MLIAB_CINFO_ID" controlFocus="USER_MLIAB_CINFO__PUBLIABLIMIT_ID__0_ctl">
+         <MLIAB_CINFO_ID>NEW</MLIAB_CINFO_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <POLICY_DETAILS_ID>SESSION</POLICY_DETAILS_ID>
+         <PUBLIABLIMIT_ID>NULL</PUBLIABLIMIT_ID>
+         <PUBLIABLIMIT_DEBUG viewDesc="What Public Liability Limit do you require?"></PUBLIABLIMIT_DEBUG>
+         <TOOLCOVER viewDesc="Do you require tools cover?">NULL</TOOLCOVER>
+         <EMPLOYEETOOL viewDesc="EmployeeTools">NULL</EMPLOYEETOOL>
+         <TOOLVALUE_ID>NULL</TOOLVALUE_ID>
+         <TOOLVALUE_DEBUG viewDesc="What value of tools cover would you like?"></TOOLVALUE_DEBUG>
+         <COMPANYSTATUS_ID>NULL</COMPANYSTATUS_ID>
+         <COMPANYSTATUS_DEBUG viewDesc="What is your Company Status?"></COMPANYSTATUS_DEBUG>
+         <MANUALWORK viewDesc="Do you carry out any manual work?">NULL</MANUALWORK>
+         <SUBSIDYN>NULL</SUBSIDYN>
+         <INCLUDEYN>NULL</INCLUDEYN>
+         <TOTALEMPLOYEES decimalPlaces="0" currency="false">NULL</TOTALEMPLOYEES>
+         <TOTALPANDP viewDesc="Total number of Partners and Principals?" decimalPlaces="0" currency="false">NULL</TOTALPANDP>
+         <MANUALDIRECTORS viewDesc="Total number of directors working manually?" decimalPlaces="0" currency="false">NULL</MANUALDIRECTORS>
+         <NONMANUDIREC viewDesc="Total number of non-manual directors?" decimalPlaces="0" currency="false">NULL</NONMANUDIREC>
+         <MANUALEMPS viewDesc="Total number of employees working manually" decimalPlaces="0" currency="false">NULL</MANUALEMPS>
+         <NONMANUALEMPS viewDesc="Total number of non-manual employees?" decimalPlaces="0" currency="false">NULL</NONMANUALEMPS>
+         <ERNREF viewDesc="What is your Employers Reference Number?" decimalPlaces="0" currency="false">NULL</ERNREF>
+         <ERNEXEMPT viewDesc="ERNExempt">NULL</ERNEXEMPT>
+         <TEMPINSURANCE viewDesc="Do you require temporary employees insurance?">NULL</TEMPINSURANCE>
+         <MANDAYS viewDesc="How many man days per year?" decimalPlaces="0" currency="false">NULL</MANDAYS>
+         <YRESTABLISHED viewDesc="What year were you established?" decimalPlaces="0" currency="false">NULL</YRESTABLISHED>
+         <YRS viewDesc="How many years have you been established?" decimalPlaces="0" currency="false">NULL</YRS>
+         <YRSEXP viewDesc="How many years experience do you have?" decimalPlaces="0" currency="false">NULL</YRSEXP>
+         <ANNUALTURNOVER viewDesc="What is your Estimated Annual Turnover?" currency="true">NULL</ANNUALTURNOVER>
+         <BONAFIDEWR viewDesc="Bona Fide Wageroll  (Supply and Fix)" currency="true">NULL</BONAFIDEWR>
+         <MANUALPAYE viewDesc="Direct Manual Wageroll (PAYE)" currency="true">NULL</MANUALPAYE>
+         <CLERICALPAYE viewDesc="PAYE Wageroll for Clerical Employees" currency="true">NULL</CLERICALPAYE>
+         <LABOURWR viewDesc="Labour Only Wageroll" currency="true">NULL</LABOURWR>
+         <SUPERVISORWR viewDesc="Total Supervisor / Yardmen wages" currency="true">NULL</SUPERVISORWR>
+         <PSDRAWINGS viewDesc="What are the principals drawings?" currency="true">NULL</PSDRAWINGS>
+         <WORKSOLEY viewDesc="Do you work solely on Private Dwelling Houses">NULL</WORKSOLEY>
+         <HEAT viewDesc="Do you use heat?">NULL</HEAT>
+         <HEATPERCENT viewDesc="What percentage?" decimalPlaces="0" currency="false">NULL</HEATPERCENT>
+         <MAXHEIGHT_ID>NULL</MAXHEIGHT_ID>
+         <MAXHEIGHT_DEBUG viewDesc="What is the maximum height you work at"></MAXHEIGHT_DEBUG>
+         <ASSOCIMEM viewDesc="Are you a member of any association or federation?">NULL</ASSOCIMEM>
+         <WHICHASSOCI_ID>NULL</WHICHASSOCI_ID>
+         <WHICHASSOCI_DEBUG viewDesc="Please select which one"></WHICHASSOCI_DEBUG>
+         <HEALTHSAFETY viewDesc="anyone who is responsible for Health and Safety?">NULL</HEALTHSAFETY>
+         <WRITTENRA viewDesc="responsible for written risk assessments?">NULL</WRITTENRA>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+ </page>
+ <page id="pandp" name="pandp.aspx" path="~/mliab/pandp.aspx" order="5" type="m" included="true" parent="cinfo">
+     <userObject tableName="USER_MLIAB_PANDP" desc="Partners and Principals" required="false" primaryKey="MLIAB_PANDP_ID" controlFocus="USER_MLIAB_PANDP__TITLE_ID__0_ctl">
+         <MLIAB_PANDP_ID>NEW</MLIAB_PANDP_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <MLIAB_CINFO_ID>SESSION</MLIAB_CINFO_ID>
+         <TITLE_ID>NULL</TITLE_ID>
+         <TITLE_DEBUG viewDesc="What is the Title of the Partner?" summaryHeader="Title" summaryFormat="" summaryOrder="1"></TITLE_DEBUG>
+         <FORENAME viewDesc="What is the Forename of the Partner?" summaryHeader="Forename" summaryFormat="" summaryOrder="2" decimalPlaces="0" currency="false">NULL</FORENAME>
+         <SURNAME viewDesc="What is the Surname of the Partner?" summaryHeader="Surname" summaryFormat="" summaryOrder="3" decimalPlaces="0" currency="false">NULL</SURNAME>
+         <STATUS_ID>NULL</STATUS_ID>
+         <STATUS_DEBUG viewDesc="What is the Status of the Partner?" summaryHeader="Status" summaryFormat="" summaryOrder="4"></STATUS_DEBUG>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+     <formValidation>
+         <validation>
+          <controlToValidate>USER_MLIAB_CINFO__TOTALPANDP__0</controlToValidate>
+          <operatorType>Not Equal To</operatorType>
+          <comparisonType>ObjectCount</comparisonType>
+          <validationValue>USER_MLIAB_PANDP,Add,0</validationValue>
+          <displayMessage>Please validate Partners and Principals</displayMessage>
+         </validation>
+     </formValidation>
+ </page>
+ <page id="subsid" name="subsid.aspx" path="~/mliab/subsid.aspx" order="6" type="m" included="false" parent="cinfo">
+     <userObject tableName="USER_MLIAB_SUBSID" desc="Subsidiaries" required="false" primaryKey="MLIAB_SUBSID_ID" controlFocus="USER_MLIAB_SUBSID__SUBSIDNAME__0_ctl">
+         <MLIAB_SUBSID_ID>NEW</MLIAB_SUBSID_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <MLIAB_CINFO_ID>SESSION</MLIAB_CINFO_ID>
+         <SUBSIDNAME viewDesc="What is the name of the Subsidiary company?" summaryHeader="Company" summaryFormat="" summaryOrder="1" decimalPlaces="0" currency="false">NULL</SUBSIDNAME>
+         <SUBSIDERN viewDesc="What is the Employers Ref" summaryHeader="ERN Ref" summaryFormat="" summaryOrder="2" decimalPlaces="0" currency="false">NULL</SUBSIDERN>
+         <SUBSIDINSURER_ID>NULL</SUBSIDINSURER_ID>
+         <SUBSIDINSURER_DEBUG viewDesc="Who is the current insurer for subs" summaryHeader="Insurer" summaryFormat="" summaryOrder="3"></SUBSIDINSURER_DEBUG>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+ </page>
+ <page id="car" name="car.aspx" path="~/mliab/car.aspx" order="7" type="s" included="true" parent="">
+     <userObject tableName="USER_MLIAB_CAR" desc="CAR" required="true" primaryKey="MLIAB_CAR_ID" controlFocus="USER_MLIAB_CAR__CONTRACTSWORKS__0">
+         <MLIAB_CAR_ID>NEW</MLIAB_CAR_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <POLICY_DETAILS_ID>SESSION</POLICY_DETAILS_ID>
+         <CONTRACTSWORKS viewDesc="Cover forContract Works required? ">NULL</CONTRACTSWORKS>
+         <MAXCONTRACTVAL_ID>NULL</MAXCONTRACTVAL_ID>
+         <MAXCONTRACTVAL_DEBUG viewDesc="What is the maximum value of any one contract?"></MAXCONTRACTVAL_DEBUG>
+         <COVERPLANT viewDesc="Cover for your own Plant and Machinery  required?">NULL</COVERPLANT>
+         <OWNPLANTMACVAL_ID>NULL</OWNPLANTMACVAL_ID>
+         <OWNPLANTMACVAL_DEBUG viewDesc="What is the value of your own Plant and Machinery?"></OWNPLANTMACVAL_DEBUG>
+         <COVERHIREPLANT viewDesc="Cover for Hired in Plant and Machinery required?">NULL</COVERHIREPLANT>
+         <HIRECHARGEVAL_ID>NULL</HIRECHARGEVAL_ID>
+         <HIRECHARGEVAL_DEBUG viewDesc="What do you spend on hire charges over 12 months?"></HIRECHARGEVAL_DEBUG>
+         <HIRPLANTMACVAL_ID>NULL</HIRPLANTMACVAL_ID>
+         <HIRPLANTMACVAL_DEBUG viewDesc="Total value of your Hired in Plant and Machinery?"></HIRPLANTMACVAL_DEBUG>
+         <MAXHIRPLANTVAL_ID>NULL</MAXHIRPLANTVAL_ID>
+         <MAXHIRPLANTVAL_DEBUG viewDesc="Maximum Value of any one Item of Hired in Plant?"></MAXHIRPLANTVAL_DEBUG>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+ </page>
+ <page id="accincom" name="accincom.aspx" path="~/mliab/accincom.aspx" order="8" type="s" included="true" parent="">
+     <userObject tableName="USER_MLIAB_ACCINCOM" desc="Personal Accident and Income Protection" required="false" primaryKey="MLIAB_ACCINCOM_ID" controlFocus="USER_MLIAB_ACCINCOM__COVERYN__0">
+         <MLIAB_ACCINCOM_ID>NEW</MLIAB_ACCINCOM_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <POLICY_DETAILS_ID>SESSION</POLICY_DETAILS_ID>
+         <COVERYN viewDesc="PersonalAccident">NULL</COVERYN>
+         <ACCIDENTCOVER_ID>NULL</ACCIDENTCOVER_ID>
+         <ACCIDENTCOVER_DEBUG viewDesc="coverLevel"></ACCIDENTCOVER_DEBUG>
+         <INCOMECOVER_ID>NULL</INCOMECOVER_ID>
+         <INCOMECOVER_DEBUG viewDesc="Income Cover"></INCOMECOVER_DEBUG>
+         <PEOPLENUM viewDesc="PeopleNum" decimalPlaces="0" currency="false">NULL</PEOPLENUM>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+     <formValidation>
+         <validation>
+          <controlToValidate>USER_MLIAB_ACCINCOM__PEOPLENUM__0</controlToValidate>
+          <operatorType>Equal To</operatorType>
+          <comparisonType>StaticValue</comparisonType>
+          <validationValue>0</validationValue>
+          <displayMessage>You have not entered any people covered.</displayMessage>
+         </validation>
+     </formValidation>
+ </page>
+ <page id="papeople" name="papeople.aspx" path="~/mliab/papeople.aspx" order="9" type="m" included="true" parent="accincom">
+     <userObject tableName="USER_MLIAB_PAPEOPLE" desc="Personal Accident and Income People" required="false" primaryKey="MLIAB_PAPEOPLE_ID" controlFocus="USER_MLIAB_PAPEOPLE__TITLE_ID__0_ctl">
+         <MLIAB_PAPEOPLE_ID>NEW</MLIAB_PAPEOPLE_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <MLIAB_ACCINCOM_ID>SESSION</MLIAB_ACCINCOM_ID>
+         <TITLE_ID>NULL</TITLE_ID>
+         <TITLE_DEBUG viewDesc="Title" summaryHeader="Title" summaryFormat="" summaryOrder="1"></TITLE_DEBUG>
+         <FORENAMES viewDesc="Forenames" summaryHeader="Forenames" summaryFormat="" summaryOrder="2" decimalPlaces="0" currency="false">NULL</FORENAMES>
+         <SURNAME viewDesc="Surname" summaryHeader="Surname" summaryFormat="" summaryOrder="3" decimalPlaces="0" currency="false">NULL</SURNAME>
+         <DATEOFBIRTH viewDesc="DateOfBirth" summaryHeader="Date Of Birth" summaryFormat="{0:dd MMM yyyy}" summaryOrder="4">NULL</DATEOFBIRTH>
+         <UKRESIDENTYN viewDesc="optUKResidentYN" summaryHeader="UK Resident" summaryFormat="" summaryOrder="5">NULL</UKRESIDENTYN>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+     <formValidation>
+         <validation>
+          <controlToValidate>USER_MLIAB_ACCINCOM__PEOPLENUM__0</controlToValidate>
+          <operatorType>Not Equal To</operatorType>
+          <comparisonType>ObjectCount</comparisonType>
+          <validationValue>USER_MLIAB_PAPEOPLE,Add,0</validationValue>
+          <displayMessage>Please validate People Covered</displayMessage>
+         </validation>
+     </formValidation>
+ </page>
+ <page id="profindm" name="profindm.aspx" path="~/mliab/profindm.aspx" order="10" type="s" included="true" parent="">
+     <userObject tableName="USER_MLIAB_PROFINDM" desc="Professional Indemnity" required="false" primaryKey="MLIAB_PROFINDM_ID" controlFocus="USER_MLIAB_PROFINDM__DESIGNYN__0">
+         <MLIAB_PROFINDM_ID>NEW</MLIAB_PROFINDM_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <POLICY_DETAILS_ID>SESSION</POLICY_DETAILS_ID>
+         <DESIGNYN viewDesc="DesignYN">NULL</DESIGNYN>
+         <PIYN viewDesc="PIYN">NULL</PIYN>
+         <PILEVEL_ID>NULL</PILEVEL_ID>
+         <PILEVEL_DEBUG viewDesc="PILevel"></PILEVEL_DEBUG>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+ </page>
+ <page id="clmsum" name="clmsum.aspx" path="~/mliab/clmsum.aspx" order="11" type="s" included="true" parent="">
+     <userObject tableName="USER_MLIAB_CLMSUM" desc="Claim Summary" required="true" primaryKey="MLIAB_CLMSUM_ID" controlFocus="USER_MLIAB_CLMSUM__INCIDENTS__0">
+         <MLIAB_CLMSUM_ID>NEW</MLIAB_CLMSUM_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <POLICY_DETAILS_ID>SESSION</POLICY_DETAILS_ID>
+         <INCIDENTS viewDesc="Have you had any losses or incidents">NULL</INCIDENTS>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+ </page>
+ <page id="clmdtail" name="clmdtail.aspx" path="~/mliab/clmdtail.aspx" order="12" type="m" included="true" parent="clmsum">
+     <userObject tableName="USER_MLIAB_CLMDTAIL" desc="Claim Detail" required="false" primaryKey="MLIAB_CLMDTAIL_ID" controlFocus="USER_MLIAB_CLMDTAIL__TYPE_ID__0_ctl">
+         <MLIAB_CLMDTAIL_ID>NEW</MLIAB_CLMDTAIL_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <MLIAB_CLMSUM_ID>SESSION</MLIAB_CLMSUM_ID>
+         <TYPE_ID>NULL</TYPE_ID>
+         <TYPE_DEBUG viewDesc="What is the type of claim?" summaryHeader="Type of Claim" summaryFormat="" summaryOrder="1"></TYPE_DEBUG>
+         <DATE viewDesc="What is the claim accident / loss date?" summaryHeader="Claim Date" summaryFormat="{0:dd MMM yyyy}" summaryOrder="2">NULL</DATE>
+         <PAID viewDesc="What is the accident / loss amount paid?" summaryHeader="Amount paid" summaryFormat="{0:F2}" summaryOrder="3" currency="true">NULL</PAID>
+         <OUTSTANDING viewDesc="What is the accident / loss amount outstanding?" summaryHeader="Amount Outstanding" summaryFormat="{0:F2}" summaryOrder="4" currency="true">NULL</OUTSTANDING>
+         <DETAILS viewDesc="Please provide details:" decimalPlaces="0" currency="false">NULL</DETAILS>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+     <formValidation>
+         <validation>
+          <controlToValidate>USER_MLIAB_CLMDTAIL__DATE__0</controlToValidate>
+          <operatorType>Greater Than</operatorType>
+          <comparisonType>SystemDate</comparisonType>
+          <validationValue>Policy Start Date</validationValue>
+          <displayMessage>Claim can't be added after policy start date</displayMessage>
+         </validation>
+     </formValidation>
+ </page>
+ <page id="bussupp" name="bussupp.aspx" path="~/mliab/bussupp.aspx" order="13" type="s" included="false" parent="">
+     <userObject tableName="USER_MLIAB_BUSSUPP" desc="Business Support" required="true" primaryKey="MLIAB_BUSSUPP_ID" controlFocus="USER_MLIAB_BUSSUPP__BUSSUPPCOVER__0">
+         <MLIAB_BUSSUPP_ID>NEW</MLIAB_BUSSUPP_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <POLICY_DETAILS_ID>SESSION</POLICY_DETAILS_ID>
+         <BUSSUPPCOVER viewDesc="Do you require Business Support Cover?">NULL</BUSSUPPCOVER>
+         <EMPS viewDesc="How many employees do you have?" decimalPlaces="0" currency="false">NULL</EMPS>
+         <EMPDISPUTE viewDesc="employment dispute claim">NULL</EMPDISPUTE>
+         <EMPDISDETAILS viewDesc="If yes, please provide details" decimalPlaces="0" currency="false">NULL</EMPDISDETAILS>
+         <REDUNDANCIES viewDesc="made any redundancies">NULL</REDUNDANCIES>
+         <REDUNDETAILS viewDesc="If yes, please provide details" decimalPlaces="0" currency="false">NULL</REDUNDETAILS>
+         <REGULATIONS viewDesc="breaching any employment regulations">NULL</REGULATIONS>
+         <REGUDETAILS viewDesc="If yes, please provide details" decimalPlaces="0" currency="false">NULL</REGUDETAILS>
+         <DISCUSSIONS viewDesc="discussions with any party in respect of">NULL</DISCUSSIONS>
+         <DISCUSSDETAILS viewDesc="If yes, please provide details" decimalPlaces="0" currency="false">NULL</DISCUSSDETAILS>
+         <TRIBUNAL viewDesc="employment tribunal or court proceedings">NULL</TRIBUNAL>
+         <TRIBUNALDETAILS viewDesc="If yes, please provide details" decimalPlaces="0" currency="false">NULL</TRIBUNALDETAILS>
+         <HANDS viewDesc="prosecution under the health and safety">NULL</HANDS>
+         <HANDSDETAILS viewDesc="If yes, please provide details" decimalPlaces="0" currency="false">NULL</HANDSDETAILS>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+     <formValidation>
+         <validation>
+          <controlToValidate>USER_MLIAB_BUSSUPP__DISCUSSDETAILS__0</controlToValidate>
+          <operatorType>Not Equal To</operatorType>
+          <comparisonType>StaticValue</comparisonType>
+          <validationValue></validationValue>
+          <displayMessage>Referal, Please use the Stand-Alone Business Support Screen</displayMessage>
+         </validation>
+         <validation>
+          <controlToValidate>USER_MLIAB_BUSSUPP__EMPDISDETAILS__0</controlToValidate>
+          <operatorType>Not Equal To</operatorType>
+          <comparisonType>StaticValue</comparisonType>
+          <validationValue></validationValue>
+          <displayMessage>Referal, Please use the Stand-Alone Business Support Screen</displayMessage>
+         </validation>
+         <validation>
+          <controlToValidate>USER_MLIAB_BUSSUPP__HANDSDETAILS__0</controlToValidate>
+          <operatorType>Not Equal To</operatorType>
+          <comparisonType>StaticValue</comparisonType>
+          <validationValue></validationValue>
+          <displayMessage>Referal, Please use the Stand-Alone Business Support Screen</displayMessage>
+         </validation>
+         <validation>
+          <controlToValidate>USER_MLIAB_BUSSUPP__REDUNDETAILS__0</controlToValidate>
+          <operatorType>Not Equal To</operatorType>
+          <comparisonType>StaticValue</comparisonType>
+          <validationValue></validationValue>
+          <displayMessage>Referal, Please use the Stand-Alone Business Support Screen</displayMessage>
+         </validation>
+         <validation>
+          <controlToValidate>USER_MLIAB_BUSSUPP__REGUDETAILS__0</controlToValidate>
+          <operatorType>Not Equal To</operatorType>
+          <comparisonType>StaticValue</comparisonType>
+          <validationValue></validationValue>
+          <displayMessage>Referal, Please use the Stand-Alone Business Support Screen</displayMessage>
+         </validation>
+         <validation>
+          <controlToValidate>USER_MLIAB_BUSSUPP__TRIBUNALDETAILS__0</controlToValidate>
+          <operatorType>Not Equal To</operatorType>
+          <comparisonType>StaticValue</comparisonType>
+          <validationValue></validationValue>
+          <displayMessage>Referal, Please use the Stand-Alone Business Support Screen</displayMessage>
+         </validation>
+     </formValidation>
+ </page>
+ <page id="assump" name="assump.aspx" path="~/mliab/assump.aspx" order="14" type="s" included="true" parent="">
+     <userObject tableName="USER_MLIAB_ASSUMP" desc="Assumptions" required="true" primaryKey="MLIAB_ASSUMP_ID" controlFocus="USER_MLIAB_ASSUMP__DEMOLITION_ID__0_ctl">
+         <MLIAB_ASSUMP_ID>NEW</MLIAB_ASSUMP_ID>
+         <HISTORY_ID>SESSION</HISTORY_ID>
+         <POLICY_DETAILS_ID>SESSION</POLICY_DETAILS_ID>
+         <DEMOLITION_ID>NULL</DEMOLITION_ID>
+         <DEMOLITION_DEBUG viewDesc="1. Demolition work"></DEMOLITION_DEBUG>
+         <AIRCRAFT_ID>NULL</AIRCRAFT_ID>
+         <AIRCRAFT_DEBUG viewDesc="2. Aircraft"></AIRCRAFT_DEBUG>
+         <POWERSTATIONS_ID>NULL</POWERSTATIONS_ID>
+         <POWERSTATIONS_DEBUG viewDesc="3. Power stations"></POWERSTATIONS_DEBUG>
+         <ASBESTOS_ID>NULL</ASBESTOS_ID>
+         <ASBESTOS_DEBUG viewDesc="4. Asbestos"></ASBESTOS_DEBUG>
+         <REFUSED_ID>NULL</REFUSED_ID>
+         <REFUSED_DEBUG viewDesc="5. Insurance refused"></REFUSED_DEBUG>
+         <BANKRUPT_ID>NULL</BANKRUPT_ID>
+         <BANKRUPT_DEBUG viewDesc="6. Declared bankrupt"></BANKRUPT_DEBUG>
+         <CONVICTED_ID>NULL</CONVICTED_ID>
+         <CONVICTED_DEBUG viewDesc="7. Been convicted"></CONVICTED_DEBUG>
+         <STAFFTRAINING_ID>NULL</STAFFTRAINING_ID>
+         <STAFFTRAINING_DEBUG viewDesc="8. Ongoing staff training"></STAFFTRAINING_DEBUG>
+         <PPE_ID>NULL</PPE_ID>
+         <PPE_DEBUG viewDesc="9. Please confirm that PPE"></PPE_DEBUG>
+         <USERINSTANCE>1</USERINSTANCE>
+     </userObject>
+ </page>
+ <page id="coverstartdate" name="coverstartdate.aspx" path="~/coverstartdate.aspx" order="15" type="s" included="true" parent=""></page>
+ <page id="pleasewait" name="pleasewait.aspx" path="~/pleasewait.aspx" order="16" type="s" included="true" parent=""></page>
+ <conditionalPages>
+     <condition page="papeople.aspx">
+         <id>USER_MLIAB_ACCINCOM__COVERYN__1</id>
+         <value>true</value>
+     </condition>
+     <condition page="clmdtail.aspx">
+         <id>USER_MLIAB_CLMSUM__INCIDENTS__1</id>
+         <value>true</value>
+     </condition>
+ </conditionalPages>
+ <conditionalViews>
+     <viewControl name="USER_MLIAB_ACCINCOM__INCOMECOVER_ID__0">
+        <testValue name="USER_MLIAB_ACCINCOM__COVERYN__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_ACCINCOM__PEOPLENUM__0">
+        <testValue name="USER_MLIAB_ACCINCOM__COVERYN__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__CORGIREG__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV819|3N0TVFD9|3N0TVHP9|3N0TVHQ9|3N0TVEQ9|3N0TVDO9"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV819|3N0TVFD9|3N0TVHP9|3N0TVHQ9|3N0TVEQ9|3N0TVDO9"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__WATERPROOFING__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVAT9"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVAT9"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__WORKSHOPPERCENT__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__WORKSHOP__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__WORKSHOP__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__FIXEDMACHINERY__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__WHICHASSOCI_ID__0">
+        <testValue name="USER_MLIAB_CINFO__ASSOCIMEM__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__PAVING__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVFI9|3N0TVFH9|3N0TVE89"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVFI9|3N0TVE89|3N0TVFH9"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__NONMANUDIREC__0">
+        <testValue name="USER_MLIAB_CINFO__COMPANYSTATUS_ID__0" type="dropdown" visible="true" value="3MQQN2I2|3MQQN2I4"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CAR__MAXHIRPLANTVAL_ID__0">
+        <testValue name="USER_MLIAB_CAR__COVERHIREPLANT__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__VENTILATION__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV819|3N0TVHP9|3N0TVHQ9|3N0TVEQ9"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV819|3N0TVHP9|3N0TVHQ9|3N0TVEQ9"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CAR__HIRECHARGEVAL_ID__0">
+        <testValue name="USER_MLIAB_CAR__COVERHIREPLANT__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__HEATPERCENT__0">
+        <testValue name="USER_MLIAB_CINFO__HEAT__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CAR__MAXCONTRACTVAL_ID__0">
+        <testValue name="USER_MLIAB_CAR__CONTRACTSWORKS__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_PROFINDM__PIYN__0">
+        <testValue name="USER_MLIAB_PROFINDM__DESIGNYN__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__EFFICACYCOVER__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV749|3N0TVC39|3N0TVC59|ELECTR01|3N0TV9D9|3NVE1052|3NVE10O9"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV749|3N0TV9D9|3N0TVC39|3N0TVC59|ELECTR01|3NVE1052|3NVE10O9"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__YRSEXP__0">
+        <testValue name="USER_MLIAB_CINFO__YRS__0" type="number" visible="true" symbol="Less" value="3"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__CAVITYWALL__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV9C9"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV9C9"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CAR__HIRPLANTMACVAL_ID__0">
+        <testValue name="USER_MLIAB_CAR__COVERHIREPLANT__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__ERNREF__0">
+        <testValue name="USER_MLIAB_CINFO__ERNEXEMPT__0" type="checkbox" visible="false" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_PROFINDM__PILEVEL_ID__0">
+        <testValue name="USER_MLIAB_PROFINDM__PIYN__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__ROOFING__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVIF3|3N0TVIF4|3N0TVIF5"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVIF3|3N0TVIF4|3N0TVIF5"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__FIXEDMACHINERY__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV929|3N0TVDH9|3N0TVFC9|3N0TV819|3N0TV879|3N0TV8G9|3N1MK8F8|3N1MK8F9|3N1MK8G0|3N1MK8G1|3N0TV8H9|3N0TV8J9|3N0TV929|3N0TV9E9|3N0TVAE9|3N0TVBJ9|3N0TVBK9|3N0TVCB9|3N0TVCH9|3N0TVCP9|3N0TVDI9|3N0TVDJ9|3N0TVEB9|3N0TVFD9|3N0TVGT9|3N0TVH49|6430BA66|3N0TVI19|3N0TVI29|3N0TVJ19|3N0TVJ29|3N0TVJ69|3N0TVJI9|3N0TVKE9|3N0TVHL9|3TR9S0C6"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV929|3N0TVDH9|3N0TVFC9|3N0TV819|3N0TV879|3N0TV8G9|3N1MK8F8|3N1MK8F9|3N1MK8G0|3N1MK8G1|3N0TV8H9|3N0TV8J9|3N0TV929|3N0TV9E9|3N0TVAE9|3N0TVBJ9|3N0TVBK9|3N0TVCB9|3N0TVCH9|3N0TVCP9|3N0TVDI9|3N0TVDJ9|3N0TVEB9|3N0TVFD9|3N0TVGT9|3N0TVH49|6430BA66|3N0TVI19|3N0TVI29|3N0TVJ19|3N0TVJ29|3N0TVJ69|3N0TVJI9|3N0TVKE9|3N0TVHL9|3TR9S0C6"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__ERNEXEMPT__0">
+        <testValue name="USER_MLIAB_CINFO__TEMPINSURANCE__0" type="yesno" visible="true" value="true"></testValue>
+        <testValue name="USER_MLIAB_CINFO__TOTALEMPLOYEES__0" type="number" visible="true" symbol="Greater" value="0"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__ERNREF__0">
+        <testValue name="USER_MLIAB_CINFO__TEMPINSURANCE__0" type="yesno" visible="true" value="true"></testValue>
+        <testValue name="USER_MLIAB_CINFO__TOTALEMPLOYEES__0" type="number" visible="true" symbol="Greater" value="0"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__MANUALDIRECTORS__0">
+        <testValue name="USER_MLIAB_CINFO__COMPANYSTATUS_ID__0" type="dropdown" visible="true" value="3MQQN2I2|3MQQN2I4"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__MANUALWORK__0">
+        <testValue name="USER_MLIAB_CINFO__COMPANYSTATUS_ID__0" type="dropdown" visible="true" value="3MQQN2I3"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_ACCINCOM__ACCIDENTCOVER_ID__0">
+        <testValue name="USER_MLIAB_ACCINCOM__COVERYN__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__MAXDEPTH_ID__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV749|3N0TVD39|3N0TVK89|3N0TVH69|3N0TVFI9|3N0TVFH9|3N0TVE89|3N0TVK39|3TR9S0C6"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TV749|3N0TVD39|3N0TVK89|3N0TVH69|3N0TVFI9|3N0TVFH9|3N0TVE89|3N0TVK39|3TR9S0C6"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__EMPSUSING__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__FIXEDMACHINERY__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__TOOLVALUE_ID__0">
+        <testValue name="USER_MLIAB_CINFO__TOOLCOVER__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CAR__OWNPLANTMACVAL_ID__0">
+        <testValue name="USER_MLIAB_CAR__COVERPLANT__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__PHASE__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVC39|3N0TVC59|ELECTR01"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVC59|ELECTR01|3N0TVC39"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__PSDRAWINGS__0">
+        <testValue name="USER_MLIAB_CINFO__TOTALEMPLOYEES__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUDIREC__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALDIRECTORS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__SUPERVISORWR__0">
+        <testValue name="USER_MLIAB_CINFO__TOTALEMPLOYEES__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUDIREC__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALDIRECTORS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__LABOURWR__0">
+        <testValue name="USER_MLIAB_CINFO__TOTALEMPLOYEES__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUDIREC__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALDIRECTORS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__CLERICALPAYE__0">
+        <testValue name="USER_MLIAB_CINFO__TOTALEMPLOYEES__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUDIREC__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALDIRECTORS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__MANUALPAYE__0">
+        <testValue name="USER_MLIAB_CINFO__TOTALEMPLOYEES__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALEMPS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__NONMANUDIREC__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+        <testValue name="USER_MLIAB_CINFO__MANUALDIRECTORS__0" type="number" visible="true" symbol="Greater" value="10"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__TOTALPANDP__0">
+        <testValue name="USER_MLIAB_CINFO__COMPANYSTATUS_ID__0" type="dropdown" visible="true" value="3MQQN2I1"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_CINFO__MANDAYS__0">
+        <testValue name="USER_MLIAB_CINFO__TEMPINSURANCE__0" type="yesno" visible="true" value="true"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__SOLVENT__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVAT9"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVAT9"></testValue>
+     </viewControl>
+     <viewControl name="USER_MLIAB_TRDDTAIL__ROADSURFACING__0">
+        <testValue name="USER_MLIAB_TRDDTAIL__SECONDARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVE89"></testValue>
+        <testValue name="USER_MLIAB_TRDDTAIL__PRIMARYRISK_ID__0" type="dropdown" visible="true" value="3N0TVE89"></testValue>
+     </viewControl>
+ </conditionalViews>
+</screenLOB>
