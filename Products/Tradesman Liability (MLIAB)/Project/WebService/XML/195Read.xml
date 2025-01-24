@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<storedProceduresAndParameters xmlns="http://www.wisl.co.uk/schemas" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wisl.co.uk/schemas http://www.wisl-test.co.uk/schemas/core/storedProceduresAndParameters.xsd" readOnly="true" cas="false">
+  <!--Reads for the User LOB 195 - MLIAB-->
+  <storedProcedure name="USER_READ_MLIAB_TRDDTAIL" dataTableName="frmTrdDtail" parentSP="">
+    <parameter>
+      <parmName>@POLICY_DETAILS_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_CINFO" dataTableName="frmCInfo" parentSP="">
+    <parameter>
+      <parmName>@POLICY_DETAILS_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_PANDP" dataTableName="frmPandP" parentSP="USER_READ_MLIAB_CINFO">
+    <parameter>
+      <parmName>@MLIAB_CINFO_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_BUSSUPP" dataTableName="frmBusSupp" parentSP="">
+    <parameter>
+      <parmName>@POLICY_DETAILS_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_CLMSUM" dataTableName="frmClmSum" parentSP="">
+    <parameter>
+      <parmName>@POLICY_DETAILS_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_CLMDTAIL" dataTableName="frmClmDtail" parentSP="USER_READ_MLIAB_CLMSUM">
+    <parameter>
+      <parmName>@MLIAB_CLMSUM_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_ASSUMP" dataTableName="frmAssump" parentSP="">
+    <parameter>
+      <parmName>@POLICY_DETAILS_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_SUBSID" dataTableName="frmSubsid" parentSP="USER_READ_MLIAB_CINFO">
+    <parameter>
+      <parmName>@MLIAB_CINFO_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_CAR" dataTableName="frmCAR" parentSP="">
+    <parameter>
+      <parmName>@POLICY_DETAILS_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_ACCINCOM" dataTableName="frmAccIncom" parentSP="">
+    <parameter>
+      <parmName>@POLICY_DETAILS_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_PAPEOPLE" dataTableName="frmPAPeople" parentSP="USER_READ_MLIAB_ACCINCOM">
+    <parameter>
+      <parmName>@MLIAB_ACCINCOM_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+  <storedProcedure name="USER_READ_MLIAB_PROFINDM" dataTableName="frmProfIndm" parentSP="">
+    <parameter>
+      <parmName>@POLICY_DETAILS_ID</parmName>
+      <parmValue />
+      <dataType>System.String</dataType>
+    </parameter>
+    <parameter>
+      <parmName>@HISTORY_ID</parmName>
+      <parmValue />
+      <dataType>System.Int32</dataType>
+    </parameter>
+  </storedProcedure>
+</storedProceduresAndParameters>

@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xs:schema id="MLIAB" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="MLIAB" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:complexType xmlns:tes="http://www.transactorgsl.com">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="USER_MLIAB_TRDDTAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_TRDDTAIL_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="POLICY_DETAILS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WORKSHOPPERCENT" minOccurs="0" type="xs:decimal" />
+              <xs:element name="WORKSHOP" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EMPSUSING" minOccurs="0" type="xs:decimal" />
+              <xs:element name="FIXEDMACHINERY" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CAVITYWALL" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SOLVENT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="WATERPROOFING" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ROOFING" type="xs:boolean" minOccurs="0" />
+              <xs:element name="VENTILATION" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CORGIREG" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ROADSURFACING" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PAVING" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MAXDEPTH_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAXDEPTH_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECONDARYRISK_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SECONDARYRISK_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRIMARYRISK_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRIMARYRISK_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRESENTINSURER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRESENTINSURER_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COVERSTARTDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+              <xs:element name="PHASE" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EFFICACYCOVER" type="xs:boolean" minOccurs="0" />
+              <xs:element name="HISTORYID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POLICYDETAILSID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENGINEERING" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MANUFACTURE" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_CINFO">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_CINFO_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="POLICY_DETAILS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WRITTENRA" type="xs:boolean" minOccurs="0" />
+              <xs:element name="HEALTHSAFETY" type="xs:boolean" minOccurs="0" />
+              <xs:element name="WHICHASSOCI_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WHICHASSOCI_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASSOCIMEM" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MAXHEIGHT_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAXHEIGHT_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HEATPERCENT" minOccurs="0" type="xs:decimal" />
+              <xs:element name="HEAT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="WORKSOLEY" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PSDRAWINGS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SUPERVISORWR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LABOURWR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BONAFIDEWR" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ANNUALTURNOVER" type="xs:decimal" minOccurs="0" />
+              <xs:element name="YRSEXP" minOccurs="0" type="xs:decimal" />
+              <xs:element name="YRS" minOccurs="0" type="xs:decimal" />
+              <xs:element name="YRESTABLISHED" minOccurs="0" type="xs:decimal" />
+              <xs:element name="NONMANUALEMPS" minOccurs="0" type="xs:decimal" />
+              <xs:element name="MANUALEMPS" minOccurs="0" type="xs:decimal" />
+              <xs:element name="NONMANUDIREC" minOccurs="0" type="xs:decimal" />
+              <xs:element name="MANUALDIRECTORS" minOccurs="0" type="xs:decimal" />
+              <xs:element name="TOTALPANDP" minOccurs="0" type="xs:decimal" />
+              <xs:element name="MANUALWORK" type="xs:boolean" minOccurs="0" />
+              <xs:element name="COMPANYSTATUS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANYSTATUS_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PUBLIABLIMIT_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PUBLIABLIMIT_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+              <xs:element name="CLERICALPAYE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MANUALPAYE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOOLVALUE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOOLVALUE_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOOLCOVER" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MANDAYS" minOccurs="0" type="xs:decimal" />
+              <xs:element name="TEMPINSURANCE" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TOTALEMPLOYEES" minOccurs="0" type="xs:decimal" />
+              <xs:element name="ERNREF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUBSIDYN" type="xs:boolean" minOccurs="0" />
+              <xs:element name="INCLUDEYN" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ERNEXEMPT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EMPLOYEETOOL" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_PANDP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_PANDP_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="MLIAB_CINFO_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATUS_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SURNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FORENAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TITLE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TITLE_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_BUSSUPP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_BUSSUPP_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="POLICY_DETAILS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HANDSDETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HANDS" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TRIBUNALDETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TRIBUNAL" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DISCUSSDETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISCUSSIONS" type="xs:boolean" minOccurs="0" />
+              <xs:element name="REGUDETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REGULATIONS" type="xs:boolean" minOccurs="0" />
+              <xs:element name="REDUNDETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REDUNDANCIES" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EMPDISDETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMPDISPUTE" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EMPS" minOccurs="0" type="xs:decimal" />
+              <xs:element name="BUSSUPPCOVER" type="xs:boolean" minOccurs="0" />
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_CLMSUM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_CLMSUM_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="POLICY_DETAILS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INCIDENTS" type="xs:boolean" minOccurs="0" />
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_CLMDTAIL">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_CLMDTAIL_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="MLIAB_CLMSUM_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DETAILS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OUTSTANDING" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PAID" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TYPE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TYPE_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_ASSUMP">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_ASSUMP_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="POLICY_DETAILS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEMOLITION_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEMOLITION_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+              <xs:element name="CONVICTED_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONVICTED_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BANKRUPT_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BANKRUPT_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REFUSED_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REFUSED_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASBESTOS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ASBESTOS_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POWERSTATIONS_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="POWERSTATIONS_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AIRCRAFT_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AIRCRAFT_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PPE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PPE_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STAFFTRAINING_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STAFFTRAINING_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_SUBSID">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_SUBSID_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="MLIAB_CINFO_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUBSIDINSURER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUBSIDINSURER_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUBSIDERN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SUBSIDNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_CAR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_CAR_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="POLICY_DETAILS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+              <xs:element name="COVERHIREPLANT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="COVERPLANT" type="xs:boolean" minOccurs="0" />
+              <xs:element name="CONTRACTSWORKS" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MAXHIRPLANTVAL_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAXHIRPLANTVAL_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HIRPLANTMACVAL_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HIRPLANTMACVAL_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HIRECHARGEVAL_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HIRECHARGEVAL_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OWNPLANTMACVAL_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OWNPLANTMACVAL_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAXCONTRACTVAL_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAXCONTRACTVAL_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_ACCINCOM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_ACCINCOM_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="POLICY_DETAILS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+              <xs:element name="ACCIDENTCOVER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCIDENTCOVER_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COVERYN" type="xs:boolean" minOccurs="0" />
+              <xs:element name="INCOMECOVER_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INCOMECOVER_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PEOPLENUM" minOccurs="0" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_PAPEOPLE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_PAPEOPLE_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="MLIAB_ACCINCOM_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+              <xs:element name="UKRESIDENTYN" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DATEOFBIRTH" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SURNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FORENAMES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TITLE_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TITLE_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="USER_MLIAB_PROFINDM">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MLIAB_PROFINDM_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HISTORY_ID" type="xs:int" />
+              <xs:element name="POLICY_DETAILS_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="32" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="USERINSTANCE" type="xs:int" minOccurs="0" />
+              <xs:element name="PILEVEL_ID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PILEVEL_DEBUG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PIYN" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DESIGNYN" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="PK_U_MLIAB_TRDDTAIL" msdata:ConstraintName="PK_U_MLIAB_TRDDTAIL" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_TRDDTAIL" />
+      <xs:field xpath="MLIAB_TRDDTAIL_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_CINFO" msdata:ConstraintName="PK_U_MLIAB_CINFO" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_CINFO" />
+      <xs:field xpath="MLIAB_CINFO_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_PANDP" msdata:ConstraintName="PK_U_MLIAB_PANDP" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_PANDP" />
+      <xs:field xpath="MLIAB_PANDP_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_BUSSUPP" msdata:ConstraintName="PK_U_MLIAB_BUSSUPP" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_BUSSUPP" />
+      <xs:field xpath="MLIAB_BUSSUPP_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_CLMSUM" msdata:ConstraintName="PK_U_MLIAB_CLMSUM" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_CLMSUM" />
+      <xs:field xpath="MLIAB_CLMSUM_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_CLMDTAIL" msdata:ConstraintName="PK_U_MLIAB_CLMDTAIL" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_CLMDTAIL" />
+      <xs:field xpath="MLIAB_CLMDTAIL_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_ASSUMP" msdata:ConstraintName="PK_U_MLIAB_ASSUMP" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_ASSUMP" />
+      <xs:field xpath="MLIAB_ASSUMP_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_SUBSID" msdata:ConstraintName="PK_U_MLIAB_SUBSID" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_SUBSID" />
+      <xs:field xpath="MLIAB_SUBSID_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_CAR" msdata:ConstraintName="PK_U_MLIAB_CAR" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_CAR" />
+      <xs:field xpath="MLIAB_CAR_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_ACCINCOM" msdata:ConstraintName="PK_U_MLIAB_ACCINCOM" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_ACCINCOM" />
+      <xs:field xpath="MLIAB_ACCINCOM_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_PAPEOPLE" msdata:ConstraintName="PK_U_MLIAB_PAPEOPLE" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_PAPEOPLE" />
+      <xs:field xpath="MLIAB_PAPEOPLE_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:unique name="PK_U_MLIAB_PROFINDM" msdata:ConstraintName="PK_U_MLIAB_PROFINDM" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//USER_MLIAB_PROFINDM" />
+      <xs:field xpath="MLIAB_PROFINDM_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:unique>
+    <xs:keyref name="FK_UMLIAB_PANDP" refer="PK_U_MLIAB_CINFO" msdata:ConstraintOnly="true">
+      <xs:selector xpath="USER_MLIAB_PANDP" />
+      <xs:field xpath="MLIAB_CINFO_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:keyref>
+    <xs:keyref name="FK_UMLIAB_CLMDTAIL" refer="PK_U_MLIAB_CLMSUM" msdata:ConstraintOnly="true">
+      <xs:selector xpath="USER_MLIAB_CLMDTAIL" />
+      <xs:field xpath="MLIAB_CLMSUM_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:keyref>
+    <xs:keyref name="FK_UMLIAB_SUBSID" refer="PK_U_MLIAB_CINFO" msdata:ConstraintOnly="true">
+      <xs:selector xpath="USER_MLIAB_SUBSID" />
+      <xs:field xpath="MLIAB_CINFO_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:keyref>
+    <xs:keyref name="FK_UMLIAB_PAPEOPLE" refer="PK_U_MLIAB_ACCINCOM" msdata:ConstraintOnly="true">
+      <xs:selector xpath="USER_MLIAB_PAPEOPLE" />
+      <xs:field xpath="MLIAB_ACCINCOM_ID" />
+      <xs:field xpath="HISTORY_ID" />
+    </xs:keyref>
+  </xs:element>
+  <xs:annotation xmlns:tes="http://www.transactorgsl.com" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:appinfo>
+      <msdata:Relationship name="FK_UMLIAB_PANDP" msdata:parent="USER_MLIAB_CINFO" msdata:child="USER_MLIAB_PANDP" msdata:parentkey="MLIAB_CINFO_ID HISTORY_ID" msdata:childkey="MLIAB_CINFO_ID HISTORY_ID" />
+      <msdata:Relationship name="FK_UMLIAB_CLMDTAIL" msdata:parent="USER_MLIAB_CLMSUM" msdata:child="USER_MLIAB_CLMDTAIL" msdata:parentkey="MLIAB_CLMSUM_ID HISTORY_ID" msdata:childkey="MLIAB_CLMSUM_ID HISTORY_ID" />
+      <msdata:Relationship name="FK_UMLIAB_SUBSID" msdata:parent="USER_MLIAB_CINFO" msdata:child="USER_MLIAB_SUBSID" msdata:parentkey="MLIAB_CINFO_ID HISTORY_ID" msdata:childkey="MLIAB_CINFO_ID HISTORY_ID" />
+      <msdata:Relationship name="FK_UMLIAB_PAPEOPLE" msdata:parent="USER_MLIAB_ACCINCOM" msdata:child="USER_MLIAB_PAPEOPLE" msdata:parentkey="MLIAB_ACCINCOM_ID HISTORY_ID" msdata:childkey="MLIAB_ACCINCOM_ID HISTORY_ID" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

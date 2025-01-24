@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="MLIAB" type="1" iD="195">
+    <description>Tradesman Liability</description>
+    <versionNumber>12</versionNumber>
+    <deleteSP>USER_DELETE_MLIAB</deleteSP>
+    <live>True</live>
+    <edit>False</edit>
+    <forms>
+        <form name="TrdDtail" instance="S" type="0" deleted="False">
+            <filename>frmTrdDtail.tst</filename>
+            <description>Trade Details</description>
+            <parentForm />
+            <readSP>USER_READ_MLIAB_TRDDTAIL</readSP>
+            <saveTransform>TrdDtail.xsl</saveTransform>
+            <required>True</required>
+            <navigationVisibility>Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>1</screenOrder>
+            <risk>True</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="CInfo" instance="S" type="0" deleted="False">
+            <filename>frmCInfo.tst</filename>
+            <description>Client Information / Cover</description>
+            <parentForm />
+            <readSP>USER_READ_MLIAB_CINFO</readSP>
+            <saveTransform>CInfo.xsl</saveTransform>
+            <required>True</required>
+            <navigationVisibility>Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>2</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="PandP" instance="M" type="0" deleted="False">
+            <filename>frmPandP.tst</filename>
+            <description>Partners and Principals</description>
+            <parentForm>frmCInfo.tst</parentForm>
+            <readSP>USER_READ_MLIAB_PANDP</readSP>
+            <saveTransform>PandP.xsl</saveTransform>
+            <required>False</required>
+            <navigationVisibility>Not Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>0</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="BusSupp" instance="S" type="0" deleted="False">
+            <filename>frmBusSupp.tst</filename>
+            <description>Business Support</description>
+            <parentForm />
+            <readSP>USER_READ_MLIAB_BUSSUPP</readSP>
+            <saveTransform>BusSupp.xsl</saveTransform>
+            <required>True</required>
+            <navigationVisibility>Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>8</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>False</showOnWebsite>
+        </form>
+        <form name="ClmSum" instance="S" type="0" deleted="False">
+            <filename>frmClmSum.tst</filename>
+            <description>Claim Summary</description>
+            <parentForm />
+            <readSP>USER_READ_MLIAB_CLMSUM</readSP>
+            <saveTransform>ClmSum.xsl</saveTransform>
+            <required>True</required>
+            <navigationVisibility>Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>7</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="ClmDtail" instance="M" type="0" deleted="False">
+            <filename>frmClmDtail.tst</filename>
+            <description>Claim Detail</description>
+            <parentForm>frmClmSum.tst</parentForm>
+            <readSP>USER_READ_MLIAB_CLMDTAIL</readSP>
+            <saveTransform>ClmDtail.xsl</saveTransform>
+            <required>False</required>
+            <navigationVisibility>Not Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>0</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="Assump" instance="S" type="0" deleted="False">
+            <filename>frmAssump.tst</filename>
+            <description>Assumptions</description>
+            <parentForm />
+            <readSP>USER_READ_MLIAB_ASSUMP</readSP>
+            <saveTransform>Assump.xsl</saveTransform>
+            <required>True</required>
+            <navigationVisibility>Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>9</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="Subsid" instance="M" type="0" deleted="False">
+            <filename>frmSubsid.tst</filename>
+            <description>Subsidiaries</description>
+            <parentForm>frmCInfo.tst</parentForm>
+            <readSP>USER_READ_MLIAB_SUBSID</readSP>
+            <saveTransform>Subsid.xsl</saveTransform>
+            <required>False</required>
+            <navigationVisibility>Not Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>0</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>False</showOnWebsite>
+        </form>
+        <form name="CAR" instance="S" type="0" deleted="False">
+            <filename>frmCAR.tst</filename>
+            <description>CAR</description>
+            <parentForm />
+            <readSP>USER_READ_MLIAB_CAR</readSP>
+            <saveTransform>CAR.xsl</saveTransform>
+            <required>True</required>
+            <navigationVisibility>Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>3</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="AccIncom" instance="S" type="0" deleted="False">
+            <filename>frmAccIncom.tst</filename>
+            <description>Personal Accident and Income Protection</description>
+            <parentForm />
+            <readSP>USER_READ_MLIAB_ACCINCOM</readSP>
+            <saveTransform>AccIncom.xsl</saveTransform>
+            <required>False</required>
+            <navigationVisibility>Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>4</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="PAPeople" instance="M" type="0" deleted="False">
+            <filename>frmPAPeople.tst</filename>
+            <description>Personal Accident and Income People</description>
+            <parentForm>frmAccIncom.tst</parentForm>
+            <readSP>USER_READ_MLIAB_PAPEOPLE</readSP>
+            <saveTransform>PAPeople.xsl</saveTransform>
+            <required>False</required>
+            <navigationVisibility>Not Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>0</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+        <form name="ProfIndm" instance="S" type="0" deleted="False">
+            <filename>frmProfIndm.tst</filename>
+            <description>Professional Indemnity</description>
+            <parentForm />
+            <readSP>USER_READ_MLIAB_PROFINDM</readSP>
+            <saveTransform>ProfIndm.xsl</saveTransform>
+            <required>False</required>
+            <navigationVisibility>Included</navigationVisibility>
+            <linkedScreen />
+            <linkedObject />
+            <linkedInstance />
+            <screenOrder>5</screenOrder>
+            <risk>False</risk>
+            <postQuoteNavigation>False</postQuoteNavigation>
+            <excessLink>False</excessLink>
+            <endorsementLink>False</endorsementLink>
+            <showOnWebsite>True</showOnWebsite>
+        </form>
+    </forms>
+    <userSummary>
+        <controls>
+            <control name="WisLabel10" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen>MLIAB\frmCInfo.tst</boundScreen>
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>23</height>
+                <left>133</left>
+                <font>
+                    <bold>False</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>9</tabIndex>
+                <text>WisLabel10</text>
+                <textAlign>1</textAlign>
+                <top>131</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData>cboCompanyStatus</showData>
+                <controls />
+            </control>
+            <control name="WisLabel9" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen>MLIAB\frmCInfo.tst</boundScreen>
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>23</height>
+                <left>133</left>
+                <font>
+                    <bold>False</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>8</tabIndex>
+                <text>WisLabel9</text>
+                <textAlign>1</textAlign>
+                <top>103</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData>txtManualEmps</showData>
+                <controls />
+            </control>
+            <control name="WisLabel8" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen>MLIAB\frmCInfo.tst</boundScreen>
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>23</height>
+                <left>134</left>
+                <font>
+                    <bold>False</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>7</tabIndex>
+                <text>WisLabel8</text>
+                <textAlign>1</textAlign>
+                <top>75</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData>cboPubLiabLimit</showData>
+                <controls />
+            </control>
+            <control name="WisLabel7" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen>MLIAB\frmTrdDtail.tst</boundScreen>
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>23</height>
+                <left>134</left>
+                <font>
+                    <bold>False</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>6</tabIndex>
+                <text>WisLabel7</text>
+                <textAlign>1</textAlign>
+                <top>47</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData>cboSecondaryRisk</showData>
+                <controls />
+            </control>
+            <control name="WisLabel6" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen>MLIAB\frmTrdDtail.tst</boundScreen>
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>23</height>
+                <left>134</left>
+                <font>
+                    <bold>False</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>5</tabIndex>
+                <text>WisLabel6</text>
+                <textAlign>1</textAlign>
+                <top>19</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData>cboPrimaryRisk</showData>
+                <controls />
+            </control>
+            <control name="WisLabel5" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen />
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>28</height>
+                <left>12</left>
+                <font>
+                    <bold>True</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>4</tabIndex>
+                <text>Company Status</text>
+                <textAlign>1</textAlign>
+                <top>131</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData />
+                <controls />
+            </control>
+            <control name="WisLabel4" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen />
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>28</height>
+                <left>12</left>
+                <font>
+                    <bold>True</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>3</tabIndex>
+                <text>Manual Employees</text>
+                <textAlign>1</textAlign>
+                <top>103</top>
+                <width>115</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData />
+                <controls />
+            </control>
+            <control name="WisLabel3" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen />
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>28</height>
+                <left>12</left>
+                <font>
+                    <bold>True</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>2</tabIndex>
+                <text>Indemnity Limit</text>
+                <textAlign>1</textAlign>
+                <top>75</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData />
+                <controls />
+            </control>
+            <control name="WisLabel2" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen />
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>28</height>
+                <left>12</left>
+                <font>
+                    <bold>True</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>1</tabIndex>
+                <text>Secondary Risk</text>
+                <textAlign>1</textAlign>
+                <top>47</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData />
+                <controls />
+            </control>
+            <control name="WisLabel1" type="WisLabel">
+                <sumTotalControls />
+                <backColor>
+                    <r>236</r>
+                    <g>233</g>
+                    <b>216</b>
+                </backColor>
+                <borderStyle>0</borderStyle>
+                <boundScreen />
+                <boundTransform />
+                <description />
+                <maximumTotal>0</maximumTotal>
+                <minimumTotal />
+                <enabled>True</enabled>
+                <foreColor>
+                    <r>0</r>
+                    <g>0</g>
+                    <b>0</b>
+                </foreColor>
+                <height>28</height>
+                <left>12</left>
+                <font>
+                    <bold>True</bold>
+                    <fontName>Tahoma</fontName>
+                    <italic>False</italic>
+                    <size>8.25</size>
+                    <strikeout>False</strikeout>
+                    <underline>False</underline>
+                </font>
+                <rightToLeft>0</rightToLeft>
+                <tabIndex>0</tabIndex>
+                <text>Primary Risk</text>
+                <textAlign>1</textAlign>
+                <top>19</top>
+                <width>100</width>
+                <isDateDiff>0</isDateDiff>
+                <maskedEditBox />
+                <maskedEditBox2 />
+                <showData />
+                <controls />
+            </control>
+        </controls>
+    </userSummary>
+</project>

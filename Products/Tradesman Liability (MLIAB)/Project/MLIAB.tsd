@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<formDefinition>
+  <form name="TrdDtail">
+    <created>1</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="txtWorkshopPercent" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="optWorkshop" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="txtEmpsUsing" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="optFixedMachinery" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="optCavityWall" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+      <field name="optSolvent" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>6</ordinal>
+      </field>
+      <field name="optWaterproofing" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>7</ordinal>
+      </field>
+      <field name="optRoofing" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>8</ordinal>
+      </field>
+      <field name="optVentilation" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>9</ordinal>
+      </field>
+      <field name="optCorgiReg" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>10</ordinal>
+      </field>
+      <field name="optRoadSurfacing" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>11</ordinal>
+      </field>
+      <field name="optPaving" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>12</ordinal>
+      </field>
+      <field name="cboMaxDepth" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>13</ordinal>
+      </field>
+      <field name="cboSecondaryRisk" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>15</ordinal>
+      </field>
+      <field name="cboPrimaryRisk" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>16</ordinal>
+      </field>
+      <field name="cboPresentInsurer" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>17</ordinal>
+      </field>
+      <field name="dtpCoverStartDate" type="wisDatePicker">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>18</ordinal>
+      </field>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>2</created>
+        <deleted>0</deleted>
+        <ordinal>19</ordinal>
+      </field>
+      <field name="optPhase" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>20</ordinal>
+      </field>
+      <field name="optEfficacyCover" type="tgsYesNo">
+        <created>2</created>
+        <deleted>0</deleted>
+        <ordinal>21</ordinal>
+      </field>
+      <field name="txtHistoryID" type="WisTextBox">
+        <created>6</created>
+        <deleted>0</deleted>
+        <ordinal>22</ordinal>
+      </field>
+      <field name="txtPolicyDetailsID" type="WisTextBox">
+        <created>6</created>
+        <deleted>0</deleted>
+        <ordinal>23</ordinal>
+      </field>
+      <field name="optEngineering" type="tgsYesNo">
+        <created>12</created>
+        <deleted>0</deleted>
+        <ordinal>24</ordinal>
+      </field>
+      <field name="optManufacture" type="tgsYesNo">
+        <created>12</created>
+        <deleted>0</deleted>
+        <ordinal>25</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="CInfo">
+    <created>1</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="optWrittenRA" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="optHealthSafety" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="cboWhichAssoci" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="optAssociMem" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="cboMaxHeight" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+      <field name="txtHeatPercent" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>6</ordinal>
+      </field>
+      <field name="optHeat" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>7</ordinal>
+      </field>
+      <field name="optWorkSoley" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>8</ordinal>
+      </field>
+      <field name="cfdPsDrawings" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>9</ordinal>
+      </field>
+      <field name="cfdSupervisorWR" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>10</ordinal>
+      </field>
+      <field name="cfdLabourWR" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>11</ordinal>
+      </field>
+      <field name="cfdBonaFideWR" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>14</ordinal>
+      </field>
+      <field name="cfdAnnualTurnover" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>15</ordinal>
+      </field>
+      <field name="txtYrsExp" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>16</ordinal>
+      </field>
+      <field name="txtyrs" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>17</ordinal>
+      </field>
+      <field name="txtYrEstablished" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>18</ordinal>
+      </field>
+      <field name="txtNonManualEmps" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>19</ordinal>
+      </field>
+      <field name="txtManualEmps" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>20</ordinal>
+      </field>
+      <field name="txtNonManuDirec" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>21</ordinal>
+      </field>
+      <field name="txtManualDirectors" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>22</ordinal>
+      </field>
+      <field name="txtTotalPandP" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>23</ordinal>
+      </field>
+      <field name="optManualWork" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>24</ordinal>
+      </field>
+      <field name="cboCompanyStatus" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>25</ordinal>
+      </field>
+      <field name="cboPubLiabLimit" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>28</ordinal>
+      </field>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>2</created>
+        <deleted>0</deleted>
+        <ordinal>29</ordinal>
+      </field>
+      <field name="cfdClericalPAYE" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>30</ordinal>
+      </field>
+      <field name="cfdManualPAYE" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>31</ordinal>
+      </field>
+      <field name="cboToolValue" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>32</ordinal>
+      </field>
+      <field name="optToolCover" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>33</ordinal>
+      </field>
+      <field name="txtManDays" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>35</ordinal>
+      </field>
+      <field name="optTempInsurance" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>36</ordinal>
+      </field>
+      <field name="txtTotalEmployees" type="WisTextBox">
+        <created>3</created>
+        <deleted>0</deleted>
+        <ordinal>37</ordinal>
+      </field>
+      <field name="txtERNRef" type="WisTextBox">
+        <created>4</created>
+        <deleted>0</deleted>
+        <ordinal>38</ordinal>
+      </field>
+      <field name="optSubsidYN" type="tgsYesNo">
+        <created>4</created>
+        <deleted>0</deleted>
+        <ordinal>39</ordinal>
+      </field>
+      <field name="optincludeYN" type="tgsYesNo">
+        <created>4</created>
+        <deleted>0</deleted>
+        <ordinal>40</ordinal>
+      </field>
+      <field name="chkERNExempt" type="WisCheckBox">
+        <created>4</created>
+        <deleted>0</deleted>
+        <ordinal>42</ordinal>
+      </field>
+      <field name="Optemployeetool" type="tgsYesNo">
+        <created>7</created>
+        <deleted>0</deleted>
+        <ordinal>43</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="PandP">
+    <created>1</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="cboStatus" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="txtSurname" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="txtForename" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="cboTitle" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>2</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="BusSupp">
+    <created>1</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="txtHandSDetails" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="optHandS" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="txtTribunalDetails" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="optTribunal" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="txtDiscussDetails" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+      <field name="optDiscussions" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>6</ordinal>
+      </field>
+      <field name="txtReguDetails" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>7</ordinal>
+      </field>
+      <field name="optRegulations" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>8</ordinal>
+      </field>
+      <field name="txtRedunDetails" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>9</ordinal>
+      </field>
+      <field name="optRedundancies" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>10</ordinal>
+      </field>
+      <field name="txtEmpDisDetails" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>11</ordinal>
+      </field>
+      <field name="optEmpDispute" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>12</ordinal>
+      </field>
+      <field name="txtEmps" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>13</ordinal>
+      </field>
+      <field name="optBusSuppCover" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>14</ordinal>
+      </field>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>15</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="ClmSum">
+    <created>1</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="optIncidents" type="tgsYesNo">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>2</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="ClmDtail">
+    <created>1</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="txtDetails" type="WisTextBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="cfdOutstanding" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="cfdPaid" type="tgsCurrencyField">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="mskDate" type="WisMaskedBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="cboType" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>2</created>
+        <deleted>0</deleted>
+        <ordinal>6</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="Assump">
+    <created>1</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="cboDemolition" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>2</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="cboConvicted" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="cboBankrupt" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+      <field name="cboRefused" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>6</ordinal>
+      </field>
+      <field name="cboAsbestos" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>7</ordinal>
+      </field>
+      <field name="cboPowerStations" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>8</ordinal>
+      </field>
+      <field name="cboAircraft" type="WisComboBox">
+        <created>1</created>
+        <deleted>0</deleted>
+        <ordinal>9</ordinal>
+      </field>
+      <field name="cboPPE" type="WisComboBox">
+        <created>11</created>
+        <deleted>0</deleted>
+        <ordinal>10</ordinal>
+      </field>
+      <field name="cboStaffTraining" type="WisComboBox">
+        <created>11</created>
+        <deleted>0</deleted>
+        <ordinal>11</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="Subsid">
+    <created>4</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="cboSubsidInsurer" type="WisComboBox">
+        <created>4</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="txtSubsidERN" type="WisTextBox">
+        <created>4</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="txtSubsidName" type="WisTextBox">
+        <created>4</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>4</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="CAR">
+    <created>8</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>8</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="cfdmaxvlaueAOI" type="tgsCurrencyField">
+        <created>8</created>
+        <deleted>9</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="cfdtotvaluehire" type="tgsCurrencyField">
+        <created>8</created>
+        <deleted>9</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="cfdhirecharges" type="tgsCurrencyField">
+        <created>8</created>
+        <deleted>9</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="optcoverhireplant" type="tgsYesNo">
+        <created>8</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+      <field name="cfdvalueplant" type="tgsCurrencyField">
+        <created>8</created>
+        <deleted>9</deleted>
+        <ordinal>6</ordinal>
+      </field>
+      <field name="optcoverplant" type="tgsYesNo">
+        <created>8</created>
+        <deleted>0</deleted>
+        <ordinal>7</ordinal>
+      </field>
+      <field name="cfdonecontract" type="tgsCurrencyField">
+        <created>8</created>
+        <deleted>9</deleted>
+        <ordinal>8</ordinal>
+      </field>
+      <field name="optContractsworks" type="tgsYesNo">
+        <created>8</created>
+        <deleted>0</deleted>
+        <ordinal>9</ordinal>
+      </field>
+      <field name="cboMaxHirPlantVal" type="WisComboBox">
+        <created>9</created>
+        <deleted>0</deleted>
+        <ordinal>10</ordinal>
+      </field>
+      <field name="cboHirPlantMacVal" type="WisComboBox">
+        <created>9</created>
+        <deleted>0</deleted>
+        <ordinal>11</ordinal>
+      </field>
+      <field name="cboHireChargeVal" type="WisComboBox">
+        <created>9</created>
+        <deleted>0</deleted>
+        <ordinal>12</ordinal>
+      </field>
+      <field name="cboOwnPlantMacVal" type="WisComboBox">
+        <created>9</created>
+        <deleted>0</deleted>
+        <ordinal>13</ordinal>
+      </field>
+      <field name="cboMaxContractVal" type="WisComboBox">
+        <created>9</created>
+        <deleted>0</deleted>
+        <ordinal>14</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="AccIncom">
+    <created>10</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="cboAccidentCover" type="WisComboBox">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="optCoverYN" type="tgsYesNo">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="cboIncomeCover" type="WisComboBox">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="txtPeopleNum" type="WisTextBox">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="PAPeople">
+    <created>10</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="optUKResidentYN" type="tgsYesNo">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="mskDateOfBirth" type="WisMaskedBox">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="txtSurname" type="WisTextBox">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+      <field name="txtForenames" type="WisTextBox">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>5</ordinal>
+      </field>
+      <field name="cboTitle" type="WisComboBox">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>7</ordinal>
+      </field>
+    </fields>
+  </form>
+  <form name="ProfIndm">
+    <created>10</created>
+    <deleted>0</deleted>
+    <fields>
+      <field name="tgsUserInstance" type="tgsUserInstance">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>1</ordinal>
+      </field>
+      <field name="cboPILevel" type="WisComboBox">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>2</ordinal>
+      </field>
+      <field name="optPIYN" type="tgsYesNo">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>3</ordinal>
+      </field>
+      <field name="optDesignYN" type="tgsYesNo">
+        <created>10</created>
+        <deleted>0</deleted>
+        <ordinal>4</ordinal>
+      </field>
+    </fields>
+  </form>
+</formDefinition>

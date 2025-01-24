@@ -1,0 +1,3812 @@
+{Header}Header
+{SchemeName}Companion - Tradesman Liability
+{Underwriter}Tokio Marine HCC
+{End Header}End Header
+
+{Remark}*********************************************************************************************************************
+{Remark}** =============================================
+{Remark}** Author:      System Generated
+{Remark}** Filename:    TMKTLI01.wpd
+{Remark}** Create date: 25 October 2018
+{Remark}** Version:     1.0
+{Remark}** Description: Companion - Tradesman Liability
+{Remark}** =============================================
+{Remark}*********************************************************************************************************************
+
+{Equation}Equation
+{TypeWorkfield}SchemeTableID%
+{Operator=}=
+{TypeConstant}1448
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeWorkfield}RiskXML$
+{Operator=}=
+{TypeString}
+{End Equation}End Equation
+
+{For Each}Client
+		{For Each}Policy_Details
+{Remark}*********************************************************************************************************************
+{Remark}**** Calculator ***************************************************************************************************
+{Remark}*********************************************************************************************************************
+
+{For Each}UO_MLIAB_TrdDtail
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<TrdDtail>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<HistoryID>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_HistoryID
+				{Operator&}&
+				{TypeString}</HistoryID>
+				{Operator&}&
+				{TypeString}<PolicyDetailsID>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_PolicyDetailsID
+				{Operator&}&
+				{TypeString}</PolicyDetailsID>
+				{Operator&}&
+				{TypeString}<EfficacyCover>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_EfficacyCover
+				{Operator&}&
+				{TypeString}</EfficacyCover>
+				{Operator&}&
+				{TypeString}<WorkshopPercent>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_WorkshopPercent
+				{Operator&}&
+				{TypeString}</WorkshopPercent>
+				{Operator&}&
+				{TypeString}<Workshop>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Workshop
+				{Operator&}&
+				{TypeString}</Workshop>
+				{Operator&}&
+				{TypeString}<EmpsUsing>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_EmpsUsing
+				{Operator&}&
+				{TypeString}</EmpsUsing>
+				{Operator&}&
+				{TypeString}<FixedMachinery>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_FixedMachinery
+				{Operator&}&
+				{TypeString}</FixedMachinery>
+				{Operator&}&
+				{TypeString}<CavityWall>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_CavityWall
+				{Operator&}&
+				{TypeString}</CavityWall>
+				{Operator&}&
+				{TypeString}<Solvent>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Solvent
+				{Operator&}&
+				{TypeString}</Solvent>
+				{Operator&}&
+				{TypeString}<Waterproofing>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Waterproofing
+				{Operator&}&
+				{TypeString}</Waterproofing>
+				{Operator&}&
+				{TypeString}<Roofing>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Roofing
+				{Operator&}&
+				{TypeString}</Roofing>
+				{Operator&}&
+				{TypeString}<Ventilation>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Ventilation
+				{Operator&}&
+				{TypeString}</Ventilation>
+				{Operator&}&
+				{TypeString}<CorgiReg>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_CorgiReg
+				{Operator&}&
+				{TypeString}</CorgiReg>
+				{Operator&}&
+				{TypeString}<RoadSurfacing>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_RoadSurfacing
+				{Operator&}&
+				{TypeString}</RoadSurfacing>
+				{Operator&}&
+				{TypeString}<Paving>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Paving
+				{Operator&}&
+				{TypeString}</Paving>
+				{Operator&}&
+				{TypeString}<MaxDepth>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_MaxDepth
+				{Operator&}&
+				{TypeString}</MaxDepth>
+				{Operator&}&
+				{TypeString}<Phase>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Phase
+				{Operator&}&
+				{TypeString}</Phase>
+				{Operator&}&
+				{TypeString}<SecondaryRisk>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_SecondaryRisk
+				{Operator&}&
+				{TypeString}</SecondaryRisk>
+				{Operator&}&
+				{TypeString}<PrimaryRisk>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_PrimaryRisk
+				{Operator&}&
+				{TypeString}</PrimaryRisk>
+				{Operator&}&
+				{TypeString}<CoverStartDate>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_CoverStartDate
+				{Operator&}&
+				{TypeString}</CoverStartDate>
+				{Operator&}&
+				{TypeString}<PresentInsurer>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_PresentInsurer
+				{Operator&}&
+				{TypeString}</PresentInsurer>
+				{Operator&}&
+				{TypeString}<Manufacture>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Manufacture
+				{Operator&}&
+				{TypeString}</Manufacture>
+				{Operator&}&
+				{TypeString}<Engineering>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_TrdDtail.UQ_MLIAB_TrdDtail_Engineering
+				{Operator&}&
+				{TypeString}</Engineering>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</TrdDtail>
+	{End Equation}End Equation
+{End For}
+{For Each}UO_MLIAB_CInfo
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<CInfo>
+	{End Equation}End Equation
+{For Each}UO_MLIAB_PandP
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<PandP>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<Status>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UO_MLIAB_PandP.UQ_MLIAB_PandP_Status
+				{Operator&}&
+				{TypeString}</Status>
+				{Operator&}&
+				{TypeString}<Surname>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UO_MLIAB_PandP.UQ_MLIAB_PandP_Surname
+				{Operator&}&
+				{TypeString}</Surname>
+				{Operator&}&
+				{TypeString}<Forename>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UO_MLIAB_PandP.UQ_MLIAB_PandP_Forename
+				{Operator&}&
+				{TypeString}</Forename>
+				{Operator&}&
+				{TypeString}<Title>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UO_MLIAB_PandP.UQ_MLIAB_PandP_Title
+				{Operator&}&
+				{TypeString}</Title>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</PandP>
+	{End Equation}End Equation
+{End For}
+{For Each}UO_MLIAB_Subsid
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<Subsid>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<SubsidInsurer>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UO_MLIAB_Subsid.UQ_MLIAB_Subsid_SubsidInsurer
+				{Operator&}&
+				{TypeString}</SubsidInsurer>
+				{Operator&}&
+				{TypeString}<SubsidERN>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UO_MLIAB_Subsid.UQ_MLIAB_Subsid_SubsidERN
+				{Operator&}&
+				{TypeString}</SubsidERN>
+				{Operator&}&
+				{TypeString}<SubsidName>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UO_MLIAB_Subsid.UQ_MLIAB_Subsid_SubsidName
+				{Operator&}&
+				{TypeString}</SubsidName>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</Subsid>
+	{End Equation}End Equation
+{End For}
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<ManDays>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ManDays
+				{Operator&}&
+				{TypeString}</ManDays>
+				{Operator&}&
+				{TypeString}<TempInsurance>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_TempInsurance
+				{Operator&}&
+				{TypeString}</TempInsurance>
+				{Operator&}&
+				{TypeString}<BonaFideWR>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_BonaFideWR
+				{Operator&}&
+				{TypeString}</BonaFideWR>
+				{Operator&}&
+				{TypeString}<YrEstablished>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_YrEstablished
+				{Operator&}&
+				{TypeString}</YrEstablished>
+				{Operator&}&
+				{TypeString}<AnnualTurnover>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_AnnualTurnover
+				{Operator&}&
+				{TypeString}</AnnualTurnover>
+				{Operator&}&
+				{TypeString}<yrs>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_yrs
+				{Operator&}&
+				{TypeString}</yrs>
+				{Operator&}&
+				{TypeString}<YrsExp>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_YrsExp
+				{Operator&}&
+				{TypeString}</YrsExp>
+				{Operator&}&
+				{TypeString}<WrittenRA>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_WrittenRA
+				{Operator&}&
+				{TypeString}</WrittenRA>
+				{Operator&}&
+				{TypeString}<HealthSafety>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_HealthSafety
+				{Operator&}&
+				{TypeString}</HealthSafety>
+				{Operator&}&
+				{TypeString}<WhichAssoci>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_WhichAssoci
+				{Operator&}&
+				{TypeString}</WhichAssoci>
+				{Operator&}&
+				{TypeString}<AssociMem>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_AssociMem
+				{Operator&}&
+				{TypeString}</AssociMem>
+				{Operator&}&
+				{TypeString}<MaxHeight>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_MaxHeight
+				{Operator&}&
+				{TypeString}</MaxHeight>
+				{Operator&}&
+				{TypeString}<HeatPercent>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_HeatPercent
+				{Operator&}&
+				{TypeString}</HeatPercent>
+				{Operator&}&
+				{TypeString}<Heat>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_Heat
+				{Operator&}&
+				{TypeString}</Heat>
+				{Operator&}&
+				{TypeString}<WorkSoley>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_WorkSoley
+				{Operator&}&
+				{TypeString}</WorkSoley>
+				{Operator&}&
+				{TypeString}<PsDrawings>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_PsDrawings
+				{Operator&}&
+				{TypeString}</PsDrawings>
+				{Operator&}&
+				{TypeString}<SupervisorWR>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_SupervisorWR
+				{Operator&}&
+				{TypeString}</SupervisorWR>
+				{Operator&}&
+				{TypeString}<LabourWR>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_LabourWR
+				{Operator&}&
+				{TypeString}</LabourWR>
+				{Operator&}&
+				{TypeString}<ClericalPAYE>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ClericalPAYE
+				{Operator&}&
+				{TypeString}</ClericalPAYE>
+				{Operator&}&
+				{TypeString}<ManualPAYE>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ManualPAYE
+				{Operator&}&
+				{TypeString}</ManualPAYE>
+				{Operator&}&
+				{TypeString}<ERNExempt>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ERNExempt
+				{Operator&}&
+				{TypeString}</ERNExempt>
+				{Operator&}&
+				{TypeString}<ERNRef>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ERNRef
+				{Operator&}&
+				{TypeString}</ERNRef>
+				{Operator&}&
+				{TypeString}<includeYN>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_includeYN
+				{Operator&}&
+				{TypeString}</includeYN>
+				{Operator&}&
+				{TypeString}<SubsidYN>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_SubsidYN
+				{Operator&}&
+				{TypeString}</SubsidYN>
+				{Operator&}&
+				{TypeString}<TotalEmployees>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_TotalEmployees
+				{Operator&}&
+				{TypeString}</TotalEmployees>
+				{Operator&}&
+				{TypeString}<NonManualEmps>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_NonManualEmps
+				{Operator&}&
+				{TypeString}</NonManualEmps>
+				{Operator&}&
+				{TypeString}<ManualEmps>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ManualEmps
+				{Operator&}&
+				{TypeString}</ManualEmps>
+				{Operator&}&
+				{TypeString}<NonManuDirec>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_NonManuDirec
+				{Operator&}&
+				{TypeString}</NonManuDirec>
+				{Operator&}&
+				{TypeString}<ManualDirectors>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ManualDirectors
+				{Operator&}&
+				{TypeString}</ManualDirectors>
+				{Operator&}&
+				{TypeString}<TotalPandP>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_TotalPandP
+				{Operator&}&
+				{TypeString}</TotalPandP>
+				{Operator&}&
+				{TypeString}<ManualWork>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ManualWork
+				{Operator&}&
+				{TypeString}</ManualWork>
+				{Operator&}&
+				{TypeString}<CompanyStatus>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_CompanyStatus
+				{Operator&}&
+				{TypeString}</CompanyStatus>
+				{Operator&}&
+				{TypeString}<employeetool>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_employeetool
+				{Operator&}&
+				{TypeString}</employeetool>
+				{Operator&}&
+				{TypeString}<ToolValue>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ToolValue
+				{Operator&}&
+				{TypeString}</ToolValue>
+				{Operator&}&
+				{TypeString}<ToolCover>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_ToolCover
+				{Operator&}&
+				{TypeString}</ToolCover>
+				{Operator&}&
+				{TypeString}<PubLiabLimit>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CInfo.UQ_MLIAB_CInfo_PubLiabLimit
+				{Operator&}&
+				{TypeString}</PubLiabLimit>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</CInfo>
+	{End Equation}End Equation
+{End For}
+{For Each}UO_MLIAB_BusSupp
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<BusSupp>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<HandSDetails>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_HandSDetails
+				{Operator&}&
+				{TypeString}</HandSDetails>
+				{Operator&}&
+				{TypeString}<HandS>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_HandS
+				{Operator&}&
+				{TypeString}</HandS>
+				{Operator&}&
+				{TypeString}<TribunalDetails>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_TribunalDetails
+				{Operator&}&
+				{TypeString}</TribunalDetails>
+				{Operator&}&
+				{TypeString}<Tribunal>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_Tribunal
+				{Operator&}&
+				{TypeString}</Tribunal>
+				{Operator&}&
+				{TypeString}<DiscussDetails>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_DiscussDetails
+				{Operator&}&
+				{TypeString}</DiscussDetails>
+				{Operator&}&
+				{TypeString}<Discussions>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_Discussions
+				{Operator&}&
+				{TypeString}</Discussions>
+				{Operator&}&
+				{TypeString}<ReguDetails>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_ReguDetails
+				{Operator&}&
+				{TypeString}</ReguDetails>
+				{Operator&}&
+				{TypeString}<Regulations>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_Regulations
+				{Operator&}&
+				{TypeString}</Regulations>
+				{Operator&}&
+				{TypeString}<RedunDetails>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_RedunDetails
+				{Operator&}&
+				{TypeString}</RedunDetails>
+				{Operator&}&
+				{TypeString}<Redundancies>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_Redundancies
+				{Operator&}&
+				{TypeString}</Redundancies>
+				{Operator&}&
+				{TypeString}<EmpDisDetails>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_EmpDisDetails
+				{Operator&}&
+				{TypeString}</EmpDisDetails>
+				{Operator&}&
+				{TypeString}<EmpDispute>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_EmpDispute
+				{Operator&}&
+				{TypeString}</EmpDispute>
+				{Operator&}&
+				{TypeString}<Emps>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_Emps
+				{Operator&}&
+				{TypeString}</Emps>
+				{Operator&}&
+				{TypeString}<BusSuppCover>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_BusSupp.UQ_MLIAB_BusSupp_BusSuppCover
+				{Operator&}&
+				{TypeString}</BusSuppCover>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</BusSupp>
+	{End Equation}End Equation
+{End For}
+{For Each}UO_MLIAB_ClmSum
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<ClmSum>
+	{End Equation}End Equation
+{For Each}UO_MLIAB_ClmDtail
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<ClmDtail>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<Details>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ClmSum.UO_MLIAB_ClmDtail.UQ_MLIAB_ClmDtail_Details
+				{Operator&}&
+				{TypeString}</Details>
+				{Operator&}&
+				{TypeString}<Outstanding>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ClmSum.UO_MLIAB_ClmDtail.UQ_MLIAB_ClmDtail_Outstanding
+				{Operator&}&
+				{TypeString}</Outstanding>
+				{Operator&}&
+				{TypeString}<Paid>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ClmSum.UO_MLIAB_ClmDtail.UQ_MLIAB_ClmDtail_Paid
+				{Operator&}&
+				{TypeString}</Paid>
+				{Operator&}&
+				{TypeString}<Date>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ClmSum.UO_MLIAB_ClmDtail.UQ_MLIAB_ClmDtail_Date
+				{Operator&}&
+				{TypeString}</Date>
+				{Operator&}&
+				{TypeString}<Type>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ClmSum.UO_MLIAB_ClmDtail.UQ_MLIAB_ClmDtail_Type
+				{Operator&}&
+				{TypeString}</Type>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</ClmDtail>
+	{End Equation}End Equation
+{End For}
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<Incidents>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ClmSum.UQ_MLIAB_ClmSum_Incidents
+				{Operator&}&
+				{TypeString}</Incidents>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</ClmSum>
+	{End Equation}End Equation
+{End For}
+{For Each}UO_MLIAB_Assump
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<Assump>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<Convicted>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_Convicted
+				{Operator&}&
+				{TypeString}</Convicted>
+				{Operator&}&
+				{TypeString}<Bankrupt>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_Bankrupt
+				{Operator&}&
+				{TypeString}</Bankrupt>
+				{Operator&}&
+				{TypeString}<Refused>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_Refused
+				{Operator&}&
+				{TypeString}</Refused>
+				{Operator&}&
+				{TypeString}<Asbestos>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_Asbestos
+				{Operator&}&
+				{TypeString}</Asbestos>
+				{Operator&}&
+				{TypeString}<PowerStations>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_PowerStations
+				{Operator&}&
+				{TypeString}</PowerStations>
+				{Operator&}&
+				{TypeString}<Aircraft>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_Aircraft
+				{Operator&}&
+				{TypeString}</Aircraft>
+				{Operator&}&
+				{TypeString}<Demolition>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_Demolition
+				{Operator&}&
+				{TypeString}</Demolition>
+				{TypeString}<StaffTraining>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_StaffTraining
+				{Operator&}&
+				{TypeString}</StaffTraining>
+				{TypeString}<PPE>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_Assump.UQ_MLIAB_Assump_PPE
+				{Operator&}&
+				{TypeString}</PPE>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</Assump>
+	{End Equation}End Equation
+{End For}
+{For Each}UO_MLIAB_CAR
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<CAR>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<MaxHirPlantVal>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CAR.UQ_MLIAB_CAR_MaxHirPlantVal
+				{Operator&}&
+				{TypeString}</MaxHirPlantVal>
+				{Operator&}&
+				{TypeString}<HirPlantMacVal>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CAR.UQ_MLIAB_CAR_HirPlantMacVal
+				{Operator&}&
+				{TypeString}</HirPlantMacVal>
+				{Operator&}&
+				{TypeString}<HireChargeVal>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CAR.UQ_MLIAB_CAR_HireChargeVal
+				{Operator&}&
+				{TypeString}</HireChargeVal>
+				{Operator&}&
+				{TypeString}<OwnPlantMacVal>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CAR.UQ_MLIAB_CAR_OwnPlantMacVal
+				{Operator&}&
+				{TypeString}</OwnPlantMacVal>
+				{Operator&}&
+				{TypeString}<MaxContractVal>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CAR.UQ_MLIAB_CAR_MaxContractVal
+				{Operator&}&
+				{TypeString}</MaxContractVal>
+				{Operator&}&
+				{TypeString}<coverhireplant>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CAR.UQ_MLIAB_CAR_coverhireplant
+				{Operator&}&
+				{TypeString}</coverhireplant>
+				{Operator&}&
+				{TypeString}<coverplant>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CAR.UQ_MLIAB_CAR_coverplant
+				{Operator&}&
+				{TypeString}</coverplant>
+				{Operator&}&
+				{TypeString}<Contractsworks>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_CAR.UQ_MLIAB_CAR_Contractsworks
+				{Operator&}&
+				{TypeString}</Contractsworks>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</CAR>
+	{End Equation}End Equation
+{End For}
+{For Each}UO_MLIAB_AccIncom
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<AccIncom>
+	{End Equation}End Equation
+{For Each}UO_MLIAB_PAPeople
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<PAPeople>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<Title>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UO_MLIAB_PAPeople.UQ_MLIAB_PAPeople_Title
+				{Operator&}&
+				{TypeString}</Title>
+				{Operator&}&
+				{TypeString}<UKResidentYN>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UO_MLIAB_PAPeople.UQ_MLIAB_PAPeople_UKResidentYN
+				{Operator&}&
+				{TypeString}</UKResidentYN>
+				{Operator&}&
+				{TypeString}<DateOfBirth>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UO_MLIAB_PAPeople.UQ_MLIAB_PAPeople_DateOfBirth
+				{Operator&}&
+				{TypeString}</DateOfBirth>
+				{Operator&}&
+				{TypeString}<Surname>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UO_MLIAB_PAPeople.UQ_MLIAB_PAPeople_Surname
+				{Operator&}&
+				{TypeString}</Surname>
+				{Operator&}&
+				{TypeString}<Forenames>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UO_MLIAB_PAPeople.UQ_MLIAB_PAPeople_Forenames
+				{Operator&}&
+				{TypeString}</Forenames>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</PAPeople>
+	{End Equation}End Equation
+{End For}
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<PeopleNum>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UQ_MLIAB_AccIncom_PeopleNum
+				{Operator&}&
+				{TypeString}</PeopleNum>
+				{Operator&}&
+				{TypeString}<IncomeCover>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UQ_MLIAB_AccIncom_IncomeCover
+				{Operator&}&
+				{TypeString}</IncomeCover>
+				{Operator&}&
+				{TypeString}<AccidentCover>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UQ_MLIAB_AccIncom_AccidentCover
+				{Operator&}&
+				{TypeString}</AccidentCover>
+				{Operator&}&
+				{TypeString}<CoverYN>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_AccIncom.UQ_MLIAB_AccIncom_CoverYN
+				{Operator&}&
+				{TypeString}</CoverYN>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</AccIncom>
+	{End Equation}End Equation
+{End For}
+{For Each}UO_MLIAB_ProfIndm
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}<ProfIndm>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+				{Operator&}&
+				{TypeString}<DesignYN>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ProfIndm.UQ_MLIAB_ProfIndm_DesignYN
+				{Operator&}&
+				{TypeString}</DesignYN>
+				{Operator&}&
+				{TypeString}<PILevel>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ProfIndm.UQ_MLIAB_ProfIndm_PILevel
+				{Operator&}&
+				{TypeString}</PILevel>
+				{Operator&}&
+				{TypeString}<PIYN>
+				{Operator&}&
+				{TypeQuestion}Client.Policy_Details.UO_MLIAB_ProfIndm.UQ_MLIAB_ProfIndm_PIYN
+				{Operator&}&
+				{TypeString}</PIYN>
+	{End Equation}End Equation
+	{Equation}Equation
+	{TypeWorkfield}RiskXML$
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{Operator&}&
+	{TypeString}</ProfIndm>
+	{End Equation}End Equation
+{End For}
+
+	{ApplyTable}Table
+	{TableNoInputs}8
+	{TableName}Calculators.dbo.MLIAB_uspCalculator
+	{TableInput}RiskXML
+	{Operator=}=
+	{TypeWorkfield}RiskXML$
+	{TableInput}PolicyStartDateTime
+	{Operator=}=
+	{TypeQuestion}Client.Policy_Details.Policy_Start_Date
+	{TableInput}InceptionStartDateTime
+	{Operator=}=
+	{TypeQuestion}Client.Policy_Details.Pol_InceptionDate		
+	{TableInput}PolicyQuoteStage
+	{Operator=}=
+	{TypeQuestion}Client.Policy_Details.Pol_QuoteStage
+	{TableInput}PostCode
+	{Operator=}=
+	{TypeQuestion}Client.Cli_fullpostcode
+	{TableInput}SchemeTableID
+	{Operator=}=
+	{TypeWorkfield}SchemeTableID%
+	{TableInput}AgentName
+	{Operator=}=
+	{TypeQuestion}Client.CLIAgentName
+	{TableInput}SubAgentID
+	{Operator=}=
+	{TypeQuestion}Client.Policy_Details.SubAgentID
+	{TableNoOutputs}228
+	{TableOutput}Endorsements1$						
+	{TableOutput}Referral?
+	{TableOutput}Decline?
+	{TableOutput}ReferCAR?
+	{TableOutput}ReferTradesman?
+	{TableOutput}Decline1$
+	{TableOutput}Decline2$
+	{TableOutput}Decline3$
+	{TableOutput}Decline4$
+	{TableOutput}Decline5$
+	{TableOutput}Decline6$
+	{TableOutput}Decline7$
+	{TableOutput}Decline8$
+	{TableOutput}Decline9$
+	{TableOutput}Decline10$
+	{TableOutput}Decline11$
+	{TableOutput}Decline12$
+	{TableOutput}Decline13$
+	{TableOutput}Decline14$
+	{TableOutput}Decline15$
+	{TableOutput}Decline16$
+	{TableOutput}Decline17$
+	{TableOutput}Decline18$
+	{TableOutput}Decline19$
+	{TableOutput}Decline20$
+	{TableOutput}Decline21$
+	{TableOutput}Decline22$
+	{TableOutput}Decline23$
+	{TableOutput}Decline24$
+	{TableOutput}Decline25$
+	{TableOutput}Decline26$
+	{TableOutput}Decline27$
+	{TableOutput}Decline28$
+	{TableOutput}Decline29$
+	{TableOutput}Decline30$
+	{TableOutput}Refer1$
+	{TableOutput}Refer2$
+	{TableOutput}Refer3$
+	{TableOutput}Refer4$
+	{TableOutput}Refer5$
+	{TableOutput}Refer6$
+	{TableOutput}Refer7$
+	{TableOutput}Refer8$
+	{TableOutput}Refer9$
+	{TableOutput}Refer10$
+	{TableOutput}Refer11$
+	{TableOutput}Refer12$
+	{TableOutput}Refer13$
+	{TableOutput}Refer14$
+	{TableOutput}Refer15$
+	{TableOutput}Refer16$
+	{TableOutput}Refer17$
+	{TableOutput}Refer18$
+	{TableOutput}Refer19$
+	{TableOutput}Refer20$
+	{TableOutput}Refer21$
+	{TableOutput}Refer22$
+	{TableOutput}Refer23$
+	{TableOutput}Refer24$
+	{TableOutput}Refer25$
+	{TableOutput}Refer26$
+	{TableOutput}Refer27$
+	{TableOutput}Refer28$
+	{TableOutput}Refer29$
+	{TableOutput}Refer30$
+	{TableOutput}ProductDetail1$
+	{TableOutput}ProductDetail2$
+	{TableOutput}ProductDetail3$
+	{TableOutput}ProductDetail4$
+	{TableOutput}ProductDetail5$
+	{TableOutput}ProductDetail6$
+	{TableOutput}ProductDetail7$
+	{TableOutput}ProductDetail8$
+	{TableOutput}ProductDetail9$
+	{TableOutput}ProductDetail10$
+	{TableOutput}ProductDetail11$
+	{TableOutput}ProductDetail12$
+	{TableOutput}ProductDetail13$
+	{TableOutput}ProductDetail14$
+	{TableOutput}ProductDetail15$
+	{TableOutput}ProductDetail16$
+	{TableOutput}ProductDetail17$
+	{TableOutput}ProductDetail18$
+	{TableOutput}ProductDetail19$
+	{TableOutput}ProductDetail20$
+	{TableOutput}ProductDetail21$
+	{TableOutput}ProductDetail22$
+	{TableOutput}ProductDetail23$
+	{TableOutput}ProductDetail24$
+	{TableOutput}ProductDetail25$
+	{TableOutput}ProductDetail26$
+	{TableOutput}ProductDetail27$
+	{TableOutput}ProductDetail28$
+	{TableOutput}ProductDetail29$
+	{TableOutput}ProductDetail30$	
+	{TableOutput}Breakdown1$
+	{TableOutput}Breakdown2$
+	{TableOutput}Breakdown3$
+	{TableOutput}Breakdown4$
+	{TableOutput}Breakdown5$
+	{TableOutput}Breakdown6$
+	{TableOutput}Breakdown7$
+	{TableOutput}Breakdown8$
+	{TableOutput}Breakdown9$
+	{TableOutput}Breakdown10$
+	{TableOutput}Breakdown11$
+	{TableOutput}Breakdown12$
+	{TableOutput}Breakdown13$
+	{TableOutput}Breakdown14$
+	{TableOutput}Breakdown15$
+	{TableOutput}Breakdown16$
+	{TableOutput}Breakdown17$
+	{TableOutput}Breakdown18$
+	{TableOutput}Breakdown19$
+	{TableOutput}Breakdown20$
+	{TableOutput}Breakdown21$
+	{TableOutput}Breakdown22$
+	{TableOutput}Breakdown23$
+	{TableOutput}Breakdown24$
+	{TableOutput}Breakdown25$
+	{TableOutput}Breakdown26$
+	{TableOutput}Breakdown27$
+	{TableOutput}Breakdown28$
+	{TableOutput}Breakdown29$
+	{TableOutput}Breakdown30$
+	{TableOutput}Breakdown31$
+	{TableOutput}Breakdown32$
+	{TableOutput}Breakdown33$
+	{TableOutput}Breakdown34$
+	{TableOutput}Breakdown35$
+	{TableOutput}Breakdown36$
+	{TableOutput}Breakdown37$
+	{TableOutput}Breakdown38$
+	{TableOutput}Breakdown39$
+	{TableOutput}Breakdown40$
+	{TableOutput}Breakdown41$
+	{TableOutput}Breakdown42$
+	{TableOutput}Breakdown43$
+	{TableOutput}Breakdown44$
+	{TableOutput}Breakdown45$
+	{TableOutput}Breakdown46$
+	{TableOutput}Breakdown47$
+	{TableOutput}Breakdown48$
+	{TableOutput}Breakdown49$
+	{TableOutput}Breakdown50$
+	{TableOutput}Breakdown51$
+	{TableOutput}Breakdown52$
+	{TableOutput}Breakdown53$
+	{TableOutput}Breakdown54$
+	{TableOutput}Breakdown55$
+	{TableOutput}Breakdown56$
+	{TableOutput}Breakdown57$
+	{TableOutput}Breakdown58$
+	{TableOutput}Breakdown59$
+	{TableOutput}Breakdown60$
+	{TableOutput}Breakdown61$
+	{TableOutput}Breakdown62$
+	{TableOutput}Breakdown63$
+	{TableOutput}Breakdown64$
+	{TableOutput}Breakdown65$
+	{TableOutput}Breakdown66$
+	{TableOutput}Breakdown67$
+	{TableOutput}Breakdown68$
+	{TableOutput}Breakdown69$
+	{TableOutput}Breakdown70$
+	{TableOutput}Excess1$
+	{TableOutput}Excess2$
+	{TableOutput}Excess3$
+	{TableOutput}Excess4$
+	{TableOutput}Excess5$
+	{TableOutput}Excess6$
+	{TableOutput}Excess7$
+	{TableOutput}Excess8$
+	{TableOutput}Excess9$
+	{TableOutput}Excess10$
+	{TableOutput}Excess11$
+	{TableOutput}Excess12$
+	{TableOutput}Excess13$
+	{TableOutput}Summary1$
+	{TableOutput}Summary2$
+	{TableOutput}Summary3$
+	{TableOutput}Summary4$
+	{TableOutput}Summary5$
+	{TableOutput}Summary6$
+	{TableOutput}Summary7$
+	{TableOutput}Summary8$
+	{TableOutput}Summary9$
+	{TableOutput}Summary10$
+	{TableOutput}LIABPREM%
+	{TableOutput}EMPLPREM%
+	{TableOutput}TOOLPREM%
+	{TableOutput}FXMCPREM%
+	{TableOutput}CWRKPREM%
+	{TableOutput}PLMAPREM%
+	{TableOutput}HIPLPREM%
+	{TableOutput}PAASPREM%
+	{TableOutput}PROFPREM%
+	{TableOutput}NONMPREM%
+	{TableOutput}LIABPREM_PARTNERCOMMPERCENT%
+	{TableOutput}EMPLPREM_PARTNERCOMMPERCENT%
+	{TableOutput}TOOLPREM_PARTNERCOMMPERCENT%
+	{TableOutput}FXMCPREM_PARTNERCOMMPERCENT%
+	{TableOutput}CWRKPREM_PARTNERCOMMPERCENT%
+	{TableOutput}PLMAPREM_PARTNERCOMMPERCENT%
+	{TableOutput}HIPLPREM_PARTNERCOMMPERCENT%
+	{TableOutput}PAASPREM_PARTNERCOMMPERCENT%
+	{TableOutput}PROFPREM_PARTNERCOMMPERCENT%
+	{TableOutput}NONMPREM_PARTNERCOMMPERCENT%
+	{TableOutput}LIABPREM_AGENTCOMMPERCENT%
+	{TableOutput}EMPLPREM_AGENTCOMMPERCENT%
+	{TableOutput}TOOLPREM_AGENTCOMMPERCENT%
+	{TableOutput}FXMCPREM_AGENTCOMMPERCENT%
+	{TableOutput}CWRKPREM_AGENTCOMMPERCENT%
+	{TableOutput}PLMAPREM_AGENTCOMMPERCENT%
+	{TableOutput}HIPLPREM_AGENTCOMMPERCENT%
+	{TableOutput}PAASPREM_AGENTCOMMPERCENT%
+	{TableOutput}PROFPREM_AGENTCOMMPERCENT%
+	{TableOutput}NONMPREM_AGENTCOMMPERCENT%
+	{TableOutput}LIABPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}EMPLPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}TOOLPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}FXMCPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}CWRKPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}PLMAPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}HIPLPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}PAASPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}PROFPREM_SUBAGENTCOMMPERCENT%
+	{TableOutput}NONMPREM_SUBAGENTCOMMPERCENT%
+
+    {End Table}End Table
+	{Equation}Equation
+	{TypeWorkfield}Referral?
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Referral?
+	{End Equation}End Equation   
+					
+	{End For}End For
+{End For}End For
+
+{Remark}***********************************************************************************************************
+{Remark}**Declines*************************************************************************************************
+{Remark}***********************************************************************************************************
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline?
+	{Operator=}=
+	{TypeBoolean}true
+	{End Truth}End Truth
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline1$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline1$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline2$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline2$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline3$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline3$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline4$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline4$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline5$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline5$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline6$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline6$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline7$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline7$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline8$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline8$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline9$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline9$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline10$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline10$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline11$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline11$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline12$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline12$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline13$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline13$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline14$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline14$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline15$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline15$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline16$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline16$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline17$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline17$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline18$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline18$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline19$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline19$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline20$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline20$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline21$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline21$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline22$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline22$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline23$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline23$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline24$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline24$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline25$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline25$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline26$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline26$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline27$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline27$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline28$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline28$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline29$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline29$
+			{End Decline}End Decline
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline30$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Decline30$
+			{End Decline}End Decline
+		{End If}End If
+
+		{End Product}End Product
+	{End If}End If
+
+{Remark}***********************************************************************************************************
+{Remark}**Referrals ***********************************************************************************************
+{Remark}***********************************************************************************************************
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Referral?
+	{Operator=}=
+	{TypeBoolean}true
+	{End Truth}End Truth
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer1$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer1$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer2$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer2$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer3$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer3$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer4$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer4$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer5$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer5$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer6$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer6$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer7$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer7$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer8$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer8$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer9$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer9$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer10$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer10$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer11$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer11$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer12$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer12$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer13$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer13$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer14$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer14$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer15$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer15$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer16$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer16$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer17$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer17$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer18$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer18$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer19$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer19$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer20$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer20$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer21$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer21$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer22$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer22$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer23$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer23$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer24$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer24$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer25$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer25$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer26$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer26$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer27$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer27$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer28$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer28$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer29$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer29$
+			{End Refer}End Refer
+		{End If}End If
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer30$
+		{Operator<>}<>
+		{TypeString}
+		{End Truth}End Truth
+			{Refer}Refer
+			{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Refer30$
+			{End Refer}End Refer
+		{End If}End If
+
+    {End If}End If
+
+{Remark}***********************************************************************************************************
+{Remark}**ProductDetail******************************************************************************************
+{Remark}***********************************************************************************************************
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail1$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail1$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail2$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail2$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail3$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail3$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail4$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail4$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail5$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail5$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail6$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail6$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail7$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail7$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail8$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail8$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail9$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail9$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail10$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail10$
+		{End Narrative}End Narrative
+	{End If}End If
+
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail11$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail11$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail12$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail12$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail13$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail13$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail14$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail14$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail15$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail15$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail16$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail16$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail17$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail17$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail18$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail18$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail19$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail19$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail20$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail20$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail21$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail21$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail22$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail22$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail23$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail23$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail24$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail24$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail25$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail25$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail26$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail26$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail27$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail27$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail28$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail28$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail29$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail29$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail30$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.ProductDetail30$
+		{End Narrative}End Narrative
+	{End If}End If
+
+
+{Remark}***********************************************************************************************************
+{Remark}**Excess******************************************************************************************
+{Remark}***********************************************************************************************************
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess1$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess1$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess2$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess2$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess3$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess3$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess4$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess4$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess5$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess5$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess6$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess6$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess7$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess7$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess8$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess8$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess9$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess9$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess10$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess10$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess11$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess11$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess12$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess12$
+		{End Narrative}End Narrative
+	{End If}End If
+	
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess13$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Product Details
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Excess13$
+		{End Narrative}End Narrative
+	{End If}End If
+
+{Remark}***********************************************************************************************************
+{Remark}**Summary******************************************************************************************
+{Remark}***********************************************************************************************************
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary1$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary1$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary2$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary2$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary3$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary3$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary4$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary4$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary5$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary5$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary6$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary6$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary7$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary7$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary8$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary8$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary9$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary9$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary10$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Summary
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Summary10$
+		{End Narrative}End Narrative
+	{End If}End If
+
+
+
+{Remark}***********************************************************************************************************
+{Remark}**Endorsements******************************************************************************************
+{Remark}***********************************************************************************************************
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Endorsements1$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Endorsements
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Endorsements1$
+		{End Narrative}End Narrative
+	{End If}End If
+
+
+
+{Remark}***********************************************************************************************************
+{Remark}**Breakdown******************************************************************************************
+{Remark}***********************************************************************************************************
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown1$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown1$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown2$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown2$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown3$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown3$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown4$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown4$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown5$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown5$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown6$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown6$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown7$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown7$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown8$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown8$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown9$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown9$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown10$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown10$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown11$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown11$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown12$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown12$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown13$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown13$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown14$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown14$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown15$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown15$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown16$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown16$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown17$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown17$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown18$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown18$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown19$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown19$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown20$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown20$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown21$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown21$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown22$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown22$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown23$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown23$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown24$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown24$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown25$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown25$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown26$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown26$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown27$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown27$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown28$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown28$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown29$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown29$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown30$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown30$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown31$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown31$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown32$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown32$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown33$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown33$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown34$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown34$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown35$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown35$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown36$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown36$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown37$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown37$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown38$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown38$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown39$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown39$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown40$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown40$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown41$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown41$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown42$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown42$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown43$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown43$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown44$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown44$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown45$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown45$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown46$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown46$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown47$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown47$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown48$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown48$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown49$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown49$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown50$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown50$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown51$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown51$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown52$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown52$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown53$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown53$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown54$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown54$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown55$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown55$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown56$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown56$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown57$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown57$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown58$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown58$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown59$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown59$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown60$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown60$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown61$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown61$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown62$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown62$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown63$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown63$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown64$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown64$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown65$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown65$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown66$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown66$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown67$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown67$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown68$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown68$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown69$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown69$
+		{End Narrative}End Narrative
+	{End If}End If
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown70$
+	{Operator<>}<>
+	{TypeString}
+	{End Truth}End Truth
+		{Narrative}Breakdown
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.Breakdown70$
+		{End Narrative}End Narrative
+	{End If}End If
+
+
+
+{Remark}***********************************************************************************************************
+{Remark}** PremiumSections Start ******************************************************************************************
+{Remark}***********************************************************************************************************
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_LIABPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.LIABPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_EMPLPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.EMPLPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_TOOLPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.TOOLPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_FXMCPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.FXMCPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_CWRKPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.CWRKPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_PLMAPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PLMAPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_HIPLPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.HIPLPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_PAASPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PAASPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_PROFPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PROFPREM%
+	{End Equation}End Equation
+
+   	{Equation}Equation
+	{TypeOutput}SECTION_NONMPREM_NETPREMIUM%
+	{Operator=}=
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.NONMPREM%
+	{End Equation}End Equation	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.LIABPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_LIABPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.LIABPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.EMPLPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_EMPLPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.EMPLPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.TOOLPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_TOOLPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.TOOLPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.FXMCPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_FXMCPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.FXMCPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.CWRKPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_CWRKPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.CWRKPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PLMAPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PLMAPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PLMAPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.HIPLPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_HIPLPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.HIPLPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PAASPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PAASPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PAASPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PROFPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PROFPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PROFPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+	
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.NONMPREM_PARTNERCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_NONMPREM_PARTNERCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.NONMPREM_PARTNERCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If		
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.LIABPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_LIABPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.LIABPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.EMPLPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_EMPLPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.EMPLPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.TOOLPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_TOOLPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.TOOLPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.FXMCPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_FXMCPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.FXMCPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.CWRKPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_CWRKPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.CWRKPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PLMAPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PLMAPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PLMAPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.HIPLPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_HIPLPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.HIPLPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PAASPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PAASPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PAASPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PROFPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PROFPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PROFPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.NONMPREM_AGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_NONMPREM_AGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.NONMPREM_AGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+	
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.LIABPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_LIABPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.LIABPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.EMPLPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_EMPLPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.EMPLPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.TOOLPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_TOOLPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.TOOLPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.FXMCPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_FXMCPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.FXMCPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.CWRKPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_CWRKPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.CWRKPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PLMAPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PLMAPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PLMAPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.HIPLPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_HIPLPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.HIPLPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PAASPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PAASPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PAASPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PROFPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_PROFPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.PROFPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+
+	{If}If
+	{Truth}Truth
+	{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.NONMPREM_SUBAGENTCOMMPERCENT%
+	{Operator<>}<>
+	{TypeConstant}0
+	{End Truth}End Truth
+		{Equation}Equation
+		{TypeOutput}SECTION_NONMPREM_SUBAGENTCOMMPERCENT%
+		{Operator=}=		
+		{TypeVariable}Calculators.dbo.MLIAB_uspCalculator.NONMPREM_SUBAGENTCOMMPERCENT%
+		{End Equation}End Equation
+	{End If}End If	
+	
+
+    {Equation}Equation
+    {TypeOutput}NetPremium%
+    {Operator=}=
+    {TypeOutput}SECTION_LIABPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_EMPLPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_TOOLPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_FXMCPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_CWRKPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_PLMAPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_HIPLPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_PAASPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_PROFPREM_NETPREMIUM%
+    {Operator+}+
+    {TypeOutput}SECTION_NONMPREM_NETPREMIUM%	
+	{End Equation}End Equation
+
+	{If}If
+	{Truth}Truth
+	{TypeWorkfield}Referral?
+	{Operator=}=
+	{TypeBoolean}true
+	{End Truth}End Truth
+		{Refer}Refer
+		{TypeString}Please telephone insurer to obtain a Quote
+		{End Refer}End Refer
+	{End If}End If
+
+{Remark}***************************** - Moorhouse Product Scheme Template - ***********************
+{End Product}End Product
