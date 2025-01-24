@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Codebase\\Development\\GIT\\SQLDev\\SSRS Reports\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{89E3FB1F-8937-4BB3-A7E2-49D40B2BA717}|Reports\\Reports.rptproj|C:\\Codebase\\Development\\GIT\\SQLDev\\SSRS Reports\\Reports\\Renewals Due.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
-      "RelativeMoniker": "D:0:0:{89E3FB1F-8937-4BB3-A7E2-49D40B2BA717}|Reports\\Reports.rptproj|solutionrelative:Reports\\Renewals Due.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,23 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Renewals Due.rdl [Design]",
-              "DocumentMoniker": "C:\\Codebase\\Development\\GIT\\SQLDev\\SSRS Reports\\Reports\\Renewals Due.rdl",
-              "RelativeDocumentMoniker": "Reports\\Renewals Due.rdl",
-              "ToolTip": "C:\\Codebase\\Development\\GIT\\SQLDev\\SSRS Reports\\Reports\\Renewals Due.rdl [Design]*",
-              "RelativeToolTip": "Reports\\Renewals Due.rdl [Design]*",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAClSURBVDhPpZNdDoMgEIRRT4Kxz/UMRk9t4xna55pyEoMOihK6C9v0Swh/O8NgpFAbo24seo5KLW1nzOuYXli762CQAvuT1ndXHHEm6D9v9ahvbjEE6wB7VJLy6JNADKNFVc84icgAcCZiA0CZiAwg8s3PYYJx1gCnxi1EfIUwQciXAVfI8dNHpEgaSNL8nSD7K1P42sHMTp99TBTQQCt6zhyDmYsV5UekswW0B18AAAAASUVORK5CYII=",
-              "WhenOpened": "2025-01-23T14:33:27.923Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
