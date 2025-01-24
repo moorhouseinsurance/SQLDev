@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="Daily COD Report.rdl" />
+    <Report Include="Renewals Due.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
