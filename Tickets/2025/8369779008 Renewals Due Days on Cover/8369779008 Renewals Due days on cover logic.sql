@@ -1,0 +1,55 @@
+-- Policies with cancellation and reinstatement RALs:
+SELECT
+	*
+FROM
+	[dbo].[REPORT_ACTION_LOG]
+WHERE
+	[ACTIONTYPE] IN (4,9) -- Cancellation, Reinstatement
+	AND [POLICY_DETAILS_ID] IN (SELECT [POLICY_DETAILS_ID] FROM [dbo].[REPORT_ACTION_LOG]
+								WHERE [ACTIONDATE] > '01 Jan 2025' AND [ACTIONTYPE] = 9 -- Reinstatement
+								)
+ORDER BY [POLICY_DETAILS_ID], [ACTIONDATE]
+
+
+-- Try to identify examples with a reinstatement more than 30 days after cancellation:
+SELECT
+	*
+FROM
+	[dbo].[REPORT_ACTION_LOG] AS [RAL]
+WHERE
+	[ACTIONTYPE] IN (4) -- Cancellation
+	AND [POLICY_DETAILS_ID] IN (SELECT [POLICY_DETAILS_ID] FROM [dbo].[REPORT_ACTION_LOG]
+								WHERE [ACTIONDATE] > '01 Feb 2022' AND [ACTIONTYPE] = 9 -- Reinstatement
+								AND [ACTIONDATE] > [RAL].[ACTIONDATE] + 30)
+	AND NOT EXISTS (SELECT 1 FROM [dbo].[REPORT_ACTION_LOG]
+					WHERE [ACTIONTYPE] = '4' -- Cancellation
+					AND [ACTIONDATE] > [RAL].[ACTIONDATE]) -- No further cancellations
+ORDER BY [POLICY_DETAILS_ID], [ACTIONDATE]
+
+
+-- Logic to get cover restart date after a break of more than 30 days:
+SELECT
+	 [POLICY_DETAILS_ID]
+	,[ACTIONDATE]
+	,[ACTIONTYPE]
+	,LAG([ACTIONDATE]) OVER (PARTITION BY [POLICY_DETAILS_ID] ORDER BY [ACTIONDATE]) AS [PreviousACTIONDATE]
+	,CASE
+		WHEN [ACTIONTYPE] = 9 AND LAG([ACTIONTYPE]) OVER (PARTITION BY [POLICY_DETAILS_ID] ORDER BY [ACTIONDATE]) = 4 -- This is a reinstatement following a cancellation
+			AND LAG([ACTIONDATE]) OVER (PARTITION BY [POLICY_DETAILS_ID] ORDER BY [ACTIONDATE]) < [ACTIONDATE] - 30 THEN 1
+	 END AS [BreakInCover]
+	,CASE
+		WHEN [ACTIONTYPE] = 9 AND LAG([ACTIONTYPE]) OVER (PARTITION BY [POLICY_DETAILS_ID] ORDER BY [ACTIONDATE]) = 4 -- This is a reinstatement following a cancellation
+			AND LAG([ACTIONDATE]) OVER (PARTITION BY [POLICY_DETAILS_ID] ORDER BY [ACTIONDATE]) < [ACTIONDATE] - 30 THEN [ACTIONDATE]
+	 END AS [CoverRestartDate]
+FROM
+	[dbo].[REPORT_ACTION_LOG]
+WHERE
+	[ACTIONTYPE] IN (4,9) -- Cancellation, Reinstatement
+	AND [POLICY_DETAILS_ID] IN (SELECT [POLICY_DETAILS_ID] FROM [dbo].[REPORT_ACTION_LOG]
+								WHERE [ACTIONDATE] > '01 Jan 2025' AND [ACTIONTYPE] = 9 -- Reinstatement
+								)
+AND POLICY_DETAILS_ID = '8B7266A8DA9E4003992169EE35D7B505' -- COMTL1019135 has break in cover more than 30 days (although cancelled again)
+ORDER BY [POLICY_DETAILS_ID], [ACTIONDATE]
+
+
+
