@@ -50,11 +50,13 @@
   </PropertyGroup>
   <ItemGroup>
     <DataSource Include="CRM_Test.rds" />
+    <DataSource Include="OpenGI.rds" />
     <DataSource Include="RuleBasedPremiumAdjustment_Test.rds" />
     <DataSource Include="Transactor_test.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="Daily COD Report.rdl" />
+    <Report Include="Renewals Due OpenGI 2024.rdl" />
     <Report Include="Renewals Due.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />

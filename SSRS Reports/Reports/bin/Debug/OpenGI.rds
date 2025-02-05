@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="OpenGI">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=MHGSQL01\InfoCentre;Initial Catalog=OpenGI</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>dfed24d2-0a8c-485c-b4c3-eb8dbba44c62</DataSourceID>
+</RptDataSource>
