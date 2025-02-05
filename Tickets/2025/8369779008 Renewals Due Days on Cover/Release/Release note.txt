@@ -1,0 +1,4 @@
+There are two changes to Renewals Due in testing. See:
+8362374417 Renewals Due Report MTA logic
+
+Changes will need to be merged.
