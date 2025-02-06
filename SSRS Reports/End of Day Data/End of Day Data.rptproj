@@ -52,5 +52,17 @@
     <DataSource Include="MI_live.rds" />
     <DataSource Include="MI_test.rds" />
   </ItemGroup>
+  <ItemGroup>
+    <Report Include="Agent Scorecard SME dataset.rdl" />
+    <Report Include="Agent Scorecard SME email.rdl" />
+    <Report Include="AnalysisDetail.rdl" />
+    <Report Include="Booked Business.rdl" />
+    <Report Include="EB KPI Scorecard.rdl" />
+    <Report Include="EOD Live Book.rdl" />
+    <Report Include="NB KPI Scorecard.rdl" />
+    <Report Include="Raw Data.rdl" />
+    <Report Include="Tenure.rdl" />
+    <Report Include="XBroker EB KPI Scorecard.rdl" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
