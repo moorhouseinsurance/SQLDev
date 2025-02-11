@@ -1,20 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
-  <am:AuthoringMetadata>
-    <am:CreatedBy>
-      <am:Name>SSDTRS</am:Name>
-      <am:Version>17.12.35527.113</am:Version>
-    </am:CreatedBy>
-    <am:UpdatedBy>
-      <am:Name>SSDTRS</am:Name>
-      <am:Version>17.12.35527.113</am:Version>
-    </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-02-11T09:52:22.2379970Z</am:LastModifiedTimestamp>
-  </am:AuthoringMetadata>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="OpenGI">
-      <DataSourceReference>OpenGI</DataSourceReference>
+    <DataSource Name="OpenGI_Test">
+      <DataSourceReference>OpenGI_Test</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>af220d22-1b62-4da7-8008-75cdfa1d4a51</rd:DataSourceID>
     </DataSource>
@@ -22,7 +11,7 @@
   <DataSets>
     <DataSet Name="uspReportRenewalsDueOGI">
       <Query>
-        <DataSourceName>OpenGI</DataSourceName>
+        <DataSourceName>OpenGI_Test</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@DateFrom">
             <Value>=Parameters!DateFrom.Value</Value>
@@ -222,10 +211,6 @@
           <DataField>NewVehicleReg</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="VehicleCoverUsage">
-          <DataField>VehicleCoverUsage</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Occupation">
           <DataField>Occupation</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -242,7 +227,7 @@
     </DataSet>
     <DataSet Name="Branch">
       <Query>
-        <DataSourceName>OpenGI</DataSourceName>
+        <DataSourceName>OpenGI_Test</DataSourceName>
         <CommandText>SELECT [B@], [BranchName] FROM [dbo].[Branch]
 WHERE [B@] &lt;&gt; 1</CommandText>
       </Query>
@@ -365,10 +350,7 @@ WHERE [B@] &lt;&gt; 1</CommandText>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.13542in</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>1.36458in</Width>
+                  <Width>0.83334in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1586,41 +1568,6 @@ WHERE [B@] &lt;&gt; 1</CommandText>
                         </Textbox>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox6">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Vehicle Cover/Usage</Value>
-                                  <Style>
-                                    <FontSize>8pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>White</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox6</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>White</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>#0c406e</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
@@ -1789,6 +1736,7 @@ WHERE [B@] &lt;&gt; 1</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -2781,46 +2729,12 @@ WHERE [B@] &lt;&gt; 1</CommandText>
                         </Textbox>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="VehicleCoverUsage">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!VehicleCoverUsage.Value</Value>
-                                  <Style>
-                                    <FontSize>8pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>VehicleCoverUsage</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>White</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -2872,7 +2786,7 @@ WHERE [B@] &lt;&gt; 1</CommandText>
             <Top>2.50846cm</Top>
             <Left>0.40255cm</Left>
             <Height>0.75in</Height>
-            <Width>35.12776in</Width>
+            <Width>33.4611in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2960,7 +2874,7 @@ WHERE [B@] &lt;&gt; 1</CommandText>
           <BackgroundColor>#e7e7e7</BackgroundColor>
         </Style>
       </Body>
-      <Width>36.005in</Width>
+      <Width>33.61958in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

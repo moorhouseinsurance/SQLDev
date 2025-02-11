@@ -9,7 +9,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.12.35527.113</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-02-11T09:52:22.2379970Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-02-05T13:57:06.1733514Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -35,7 +35,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>uspReportRenewalsDueOGI</CommandText>
+        <CommandText>uspReportRenewalsDueOGI_Test</CommandText>
       </Query>
       <Fields>
         <Field Name="Ref_">
@@ -2872,7 +2872,7 @@ WHERE [B@] &lt;&gt; 1</CommandText>
             <Top>2.50846cm</Top>
             <Left>0.40255cm</Left>
             <Height>0.75in</Height>
-            <Width>35.12776in</Width>
+            <Width>35.12777in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
