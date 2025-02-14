@@ -63,6 +63,7 @@
     <Report Include="Raw Data.rdl" />
     <Report Include="Tenure.rdl" />
     <Report Include="XBroker EB KPI Scorecard.rdl" />
+    <Report Include="XBroker NB KPI Scorecard.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
