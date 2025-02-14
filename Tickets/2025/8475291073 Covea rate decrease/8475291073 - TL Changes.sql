@@ -208,3 +208,77 @@ SELECT
 FROM [Calculators].[dbo].[MLIAB_Covea_TradesmanLiability_Rate]
 WHERE [EndDatetime] = CONVERT(date, GETDATE())
 ;
+
+
+--========Professional Indemnity
+--1
+SELECT * FROM [Calculators].[dbo].[MLIAB_Covea_ProfessionalIndemnity_Rate]
+WHERE [EndDatetime] IS NULL;
+
+UPDATE [Calculators].[dbo].[MLIAB_Covea_ProfessionalIndemnity_Rate]
+SET [EndDatetime] = CONVERT(date, GETDATE())
+WHERE [EndDatetime] IS NULL;
+
+INSERT INTO [Calculators].[dbo].[MLIAB_Covea_ProfessionalIndemnity_Rate](
+	 [RatingGroupID]
+	,[TurnoverStartRange]
+	,[TurnoverEndRange]
+	,[PILimit]
+	,[Rate]
+	,[StartDateTime]
+	,[EndDateTime]
+	,[InsertDateTime]
+	,[InsertUserID]
+	,[UpdateDateTime]
+	,[UpdateUserID]
+)
+SELECT
+	 [RatingGroupID]
+	,[TurnoverStartRange]
+	,[TurnoverEndRange]
+	,[PILimit]
+	,ROUND([Rate] * 0.9, 8)
+	,CONVERT(date, GETDATE()) AS [StartDateTime]
+	,NULL AS [EndDateTime]
+	,GETDATE() AS [InsertDateTime]
+	,'Jez' [InsertUserID]
+	,GETDATE() AS [UpdateDateTime]
+	,'Jez' AS [UpdateUserID]
+FROM [Calculators].[dbo].[MLIAB_Covea_ProfessionalIndemnity_Rate]
+WHERE [EndDatetime] = CONVERT(date, GETDATE())
+;
+
+
+--========Personal Accident
+--1
+SELECT * FROM [Calculators].[dbo].[MLIAB_Covea_PersonalAccidentAndIncomeProtection_Rates]
+WHERE [EndDatetime] IS NULL;
+
+UPDATE [Calculators].[dbo].[MLIAB_Covea_PersonalAccidentAndIncomeProtection_Rates]
+SET [EndDatetime] = CONVERT(date, GETDATE())
+WHERE [EndDatetime] IS NULL;
+
+INSERT INTO [Calculators].[dbo].[MLIAB_Covea_PersonalAccidentAndIncomeProtection_Rates](
+	 [CoverType]
+	,[CoverLevel]
+	,[Premium]
+	,[StartDateTime]
+	,[EndDateTime]
+	,[InsertDateTime]
+	,[InsertUserID]
+	,[UpdateDateTime]
+	,[UpdateUserID]
+)
+SELECT
+	 [CoverType]
+	,[CoverLevel]
+	,ROUND([Premium] * 0.9, 4)
+	,CONVERT(date, GETDATE()) AS [StartDateTime]
+	,NULL AS [EndDateTime]
+	,GETDATE() AS [InsertDateTime]
+	,'Jez' [InsertUserID]
+	,GETDATE() AS [UpdateDateTime]
+	,'Jez' AS [UpdateUserID]
+FROM [Calculators].[dbo].[MLIAB_Covea_PersonalAccidentAndIncomeProtection_Rates]
+WHERE [EndDatetime] = CONVERT(date, GETDATE())
+;
