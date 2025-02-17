@@ -211,7 +211,6 @@ WHERE [EndDatetime] = CONVERT(date, GETDATE())
 
 
 --========Professional Indemnity
---1
 SELECT * FROM [Calculators].[dbo].[MLIAB_Covea_ProfessionalIndemnity_Rate]
 WHERE [EndDatetime] IS NULL;
 
@@ -250,7 +249,7 @@ WHERE [EndDatetime] = CONVERT(date, GETDATE())
 
 
 --========Personal Accident
---1
+--6
 SELECT * FROM [Calculators].[dbo].[MLIAB_Covea_PersonalAccidentAndIncomeProtection_Rates]
 WHERE [EndDatetime] IS NULL;
 
