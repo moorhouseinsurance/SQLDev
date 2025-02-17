@@ -9,7 +9,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.12.35707.178</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2025-02-14T14:34:54.3943405Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2025-02-17T13:24:58.9556932Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -243,6 +243,10 @@
         <Field Name="DifferenceRanking">
           <DataField>DifferenceRanking</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntroducerCommission">
+          <DataField>IntroducerCommission</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="WebIncome">
           <DataField>WebIncome</DataField>
@@ -1956,7 +1960,7 @@ ORDER BY
             <Top>26.24516cm</Top>
             <Left>0.3cm</Left>
             <Height>0.78521cm</Height>
-            <Width>53.4cm</Width>
+            <Width>58.82021cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
               <Border>
@@ -1986,7 +1990,7 @@ ORDER BY
             <Top>27.03836cm</Top>
             <Left>0.3cm</Left>
             <Height>1.5004cm</Height>
-            <Width>53.4cm</Width>
+            <Width>58.82021cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -2006,7 +2010,7 @@ ORDER BY
             <Top>25.99905cm</Top>
             <Left>0.3cm</Left>
             <Height>0.14027cm</Height>
-            <Width>53.4cm</Width>
+            <Width>58.82021cm</Width>
             <ZIndex>5</ZIndex>
             <Visibility>
               <Hidden>=(Globals!RenderFormat.Name = "EXCEL")</Hidden>
@@ -10446,6 +10450,9 @@ ORDER BY
                 <TablixColumn>
                   <Width>2.1cm</Width>
                 </TablixColumn>
+                <TablixColumn>
+                  <Width>2.1cm</Width>
+                </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
@@ -11221,6 +11228,41 @@ ORDER BY
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox160">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Introducer Commission</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox160</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#0c406e</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
@@ -11962,6 +12004,41 @@ ORDER BY
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>AgentCommission</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="IntroducerCommission">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!IntroducerCommission.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <Format>'£'#,0;('£'#,0)</Format>
+                                    <rd:FormatSymbolCulture>en-GB</rd:FormatSymbolCulture>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>IntroducerCommission</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -12750,12 +12827,49 @@ ORDER BY
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="IntroducerCommission3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!IntroducerCommission.Value)</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>'£'#,0</Format>
+                                    <rd:FormatSymbolCulture>en-GB</rd:FormatSymbolCulture>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>IntroducerCommission3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
+                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -12812,7 +12926,7 @@ ORDER BY
             <Top>28.67029cm</Top>
             <Left>0.3cm</Left>
             <Height>1.8cm</Height>
-            <Width>56.72021cm</Width>
+            <Width>58.82021cm</Width>
             <ZIndex>26</ZIndex>
             <Style>
               <Border>
@@ -12827,7 +12941,7 @@ ORDER BY
             <Top>31.50189cm</Top>
             <Left>0.3cm</Left>
             <Height>0.78521cm</Height>
-            <Width>53.4cm</Width>
+            <Width>58.82021cm</Width>
             <ZIndex>27</ZIndex>
             <Style>
               <Border>
@@ -12857,7 +12971,7 @@ ORDER BY
             <Top>32.29509cm</Top>
             <Left>0.3cm</Left>
             <Height>1.5004cm</Height>
-            <Width>53.4cm</Width>
+            <Width>58.82021cm</Width>
             <ZIndex>28</ZIndex>
             <Style>
               <Border>
@@ -12877,7 +12991,7 @@ ORDER BY
             <Top>31.25578cm</Top>
             <Left>0.3cm</Left>
             <Height>0.14027cm</Height>
-            <Width>53.4cm</Width>
+            <Width>58.82021cm</Width>
             <ZIndex>29</ZIndex>
             <Visibility>
               <Hidden>=(Globals!RenderFormat.Name = "EXCEL")</Hidden>
@@ -12926,6 +13040,9 @@ ORDER BY
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.3cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.1cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>2.1cm</Width>
@@ -13732,6 +13849,41 @@ ORDER BY
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox169">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Introducer Commission</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox169</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>#0c406e</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
@@ -14473,6 +14625,41 @@ ORDER BY
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>AgentCommission</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="IntroducerCommission1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!IntroducerCommission.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <Format>'£'#,0;('£'#,0)</Format>
+                                    <rd:FormatSymbolCulture>en-GB</rd:FormatSymbolCulture>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>IntroducerCommission1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -15261,12 +15448,49 @@ ORDER BY
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="IntroducerCommission2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!IntroducerCommission.Value)</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>'£'#,0</Format>
+                                    <rd:FormatSymbolCulture>en-GB</rd:FormatSymbolCulture>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>IntroducerCommission2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>White</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
+                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -15323,7 +15547,7 @@ ORDER BY
             <Top>33.90904cm</Top>
             <Left>0.3cm</Left>
             <Height>1.8cm</Height>
-            <Width>56.72021cm</Width>
+            <Width>58.82021cm</Width>
             <ZIndex>30</ZIndex>
             <Style>
               <Border>
@@ -15337,7 +15561,7 @@ ORDER BY
           <BackgroundColor>#e7e7e7</BackgroundColor>
         </Style>
       </Body>
-      <Width>22.4489in</Width>
+      <Width>23.44357in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
