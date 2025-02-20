@@ -16,7 +16,24 @@ INSERT INTO [dbo].[Limit]
            ,48.00
            ,GETDATE()-1
            ,GETDATE()
-           ,'SMP')
+           ,'SMP');
+
+INSERT INTO [dbo].[Limit]
+           ([Insurer]
+           ,[LineOfBusiness]
+           ,[LimitType]
+           ,[Minimum]
+           ,[StartDateTime]
+           ,[InsertDateTime]
+           ,[InsertUserID])
+     VALUES
+           ('Covea Insurance'
+           ,'MLIAB'
+           ,'Professional Indemnity Premium'
+           ,48.00
+           ,GETDATE()-1
+           ,GETDATE()
+           ,'SMP');
 GO
 
 
