@@ -1,0 +1,428 @@
+{Header}Header
+{SchemeName}Price Forbes - Commercial Combined
+{Underwriter}Price Forbes
+{End Header}End Header
+
+{Remark}*********************************************************************************************************************
+{Remark}** Section 1 Product Details Start **********************************************************************************
+{Remark}*********************************************************************************************************************
+{Remark}** =============================================
+{Remark}** Author:	Linga Nageswara
+{Remark}** Filename:    POFCC001.wpd
+{Remark}** Create date: 03-03-2025
+{Remark}** Version:     1
+{Remark}** Description: Pound Scheme Price Forbes - Commercial Combined
+{Remark}** =============================================
+{Remark}*********************************************************************************************************************
+{Remark}** Section 1 Product Details End ************************************************************************************
+{Remark}*********************************************************************************************************************
+
+{Equation}Equation
+{TypeWorkfield}SchemeTableID%
+{Operator=}=
+{TypeConstant}1671
+{End Equation}End Equation
+
+
+{Remark}***************************** - Default Output Variables Start - ***********************
+{Equation}Equation
+{TypeOutput}NetPremium%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}GrossPremium%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}IPT%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Remark}************************************************************************************************************
+{Remark}** Decline BrokerCheck *****************************************************************
+{Remark}************************************************************************************************************
+
+{Equation}Equation
+{TypeWorkfield}SchemeTableID%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{For Each}Client
+	{For Each}Policy_Details
+		{ApplyTable}Table
+		{TableNoInputs}3
+		{TableName}RATE_SubAgentSchemeRestriction
+		{TableInput}SubAgentID
+		{Operator=}=
+		{TypeQuestion}Client.Policy_Details.SubAgentID
+		{TableInput}SchemeTableID
+		{Operator=}=
+		{TypeWorkfield}SchemeTableID%
+		{TableInput}Obsolete
+		{Operator=}=
+		{TypeConstant}0
+		{TableNoOutputs}1
+		{TableOutput}SubAgentSchemeRestrictionID%
+		{End Table}End Table
+
+		{If}If
+		{Truth}Truth
+		{TypeVariable}RATE_SubAgentSchemeRestriction.SubAgentSchemeRestrictionID%
+		{Operator>}>
+		{TypeConstant}0
+		{End Truth}End Truth
+			{Decline}Decline
+			{TypeString}Not correct Sub Agent
+			{End Decline}
+		{End If}End If
+	{End For}End For
+{End For}End For
+{Equation}Equation
+{TypeOutput}SECTION_TKTCPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_BUILPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_CONTPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_ADCTPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_ADBDPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_TEIMPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation		
+
+{Equation}Equation
+{TypeOutput}SECTION_FZFDPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_GLASPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_SPITPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_BUINPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_MONEPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_GITRPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_EMPLPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}SECTION_LIABPREM_NETPREMIUM%
+{Operator=}=
+{TypeConstant}0
+{End Equation}End Equation
+
+
+{For Each}Client
+	{For Each}Policy_Details
+		{For Each}UO_MCOMMCOM_BusDtail
+			{For Each}UO_MCOMMCOM_MtrlDamg
+				{For Each}UO_MCOMMCOM_FrznFood
+					{For Each}UO_MCOMMCOM_Glass
+						{For Each}UO_MCOMMCOM_SpecItms
+							{For Each}UO_MCOMMCOM_BusiInte
+								{For Each}UO_MCOMMCOM_Money
+									{For Each}UO_MCOMMCOM_Transit
+										{For Each}UO_MCOMMCOM_EmpLiab								
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusDtail.UQ_MCOMMCOM_BusDtail_Tickets
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_TKTCPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If
+											
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusDtail.UO_MCOMMCOM_MtrlDamg.UQ_MCOMMCOM_MtrlDamg_BuildingsCover
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_BUILPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If					
+								
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusDtail.UO_MCOMMCOM_MtrlDamg.UQ_MCOMMCOM_MtrlDamg_ContentsCover
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_CONTPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If			
+											
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusDtail.UO_MCOMMCOM_MtrlDamg.UQ_MCOMMCOM_MtrlDamg_ContentsAD
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_ADCTPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If	
+
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusDtail.UO_MCOMMCOM_MtrlDamg.UQ_MCOMMCOM_MtrlDamg_BuildingsAD
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_ADBDPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If	
+											
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusDtail.UO_MCOMMCOM_MtrlDamg.UQ_MCOMMCOM_MtrlDamg_TenantsImp
+											{Operator<>}<>
+											{TypeConstant}0
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_TEIMPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation		
+											{End If}End If		
+
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusDtail.UO_MCOMMCOM_FrznFood.UQ_MCOMMCOM_FrznFood_FrozRnCover
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_FZFDPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If	
+											
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusDtail.UO_MCOMMCOM_Glass.UQ_MCOMMCOM_Glass_GlassCover
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_GLASPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If						
+											
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_SpecItms.UQ_MCOMMCOM_SpecItms_SpecItems
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_SPITPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If			
+											
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_BusiInte.UQ_MCOMMCOM_BusiInte_BusiInterrup
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_BUINPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If			
+																
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_Money.UQ_MCOMMCOM_Money_MoneyCover
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_MONEPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If		
+
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_Transit.UQ_MCOMMCOM_Transit_GTranCover
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_GITRPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If											
+											
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_EmpLiab.UQ_MCOMMCOM_EmpLiab_EmpLiabCover
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_EMPLPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If
+											
+											{If}If
+											{Truth}Truth
+											{TypeQuestion}Client.Policy_Details.UO_MCOMMCOM_EmpLiab.UQ_MCOMMCOM_EmpLiab_PublicLiability
+											{Operator=}=
+											{TypeBoolean}true
+											{End Truth}End Truth
+												{Equation}Equation
+												{TypeOutput}SECTION_LIABPREM_NETPREMIUM%
+												{Operator=}=
+												{TypeConstant}1
+												{End Equation}End Equation
+											{End If}End If
+								
+										{End For}End For
+									{End For}End For
+								{End For}End For
+							{End For}End For
+						{End For}End For
+					{End For}End For
+				{End For}End For
+			{End For}End For
+		{End For}End For
+	{End For}End For
+{End For}End For
+
+{Equation}Equation
+{TypeOutput}NetPremium%
+{Operator=}=
+{TypeOutput}SECTION_TKTCPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_BUILPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_CONTPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_ADCTPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_ADBDPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_TEIMPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_FZFDPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_GLASPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_SPITPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_BUINPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_MONEPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_GITRPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_EMPLPREM_NETPREMIUM%
+{Operator+}+
+{TypeOutput}SECTION_LIABPREM_NETPREMIUM%
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}IPT%
+{Operator=}=
+{TypeOutput}NetPremium%
+{Operator*}*
+{TypeConstant}0.10
+{End Equation}End Equation
+
+{Equation}Equation
+{TypeOutput}GrossPremium%
+{Operator=}=
+{TypeOutput}NetPremium%
+{Operator+}+
+{TypeOutput}IPT%
+{End Equation}End Equation
+
+{Refer}Refer
+{TypeString}Please telephone insurer to obtain a Quote
+{End Refer}End Refer
+
+{End Product}End Product
