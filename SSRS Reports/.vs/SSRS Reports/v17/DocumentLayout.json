@@ -1,12 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Codebase\\Development\\GIT\\SQLDev\\SSRS Reports\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Codebase\\Development\\SQLDev\\SSRS Reports\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89E3FB1F-8937-4BB3-A7E2-49D40B2BA717}|Reports\\Reports.rptproj|C:\\Codebase\\Development\\SQLDev\\SSRS Reports\\Reports\\NRT_Daily_Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{89E3FB1F-8937-4BB3-A7E2-49D40B2BA717}|Reports\\Reports.rptproj|solutionrelative:Reports\\NRT_Daily_Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NRT_Daily_Report.rdl [Design]",
+              "DocumentMoniker": "C:\\Codebase\\Development\\SQLDev\\SSRS Reports\\Reports\\NRT_Daily_Report.rdl",
+              "RelativeDocumentMoniker": "Reports\\NRT_Daily_Report.rdl",
+              "ToolTip": "C:\\Codebase\\Development\\SQLDev\\SSRS Reports\\Reports\\NRT_Daily_Report.rdl [Design]",
+              "RelativeToolTip": "Reports\\NRT_Daily_Report.rdl [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVDhPlZNBDoMgEEUf9SQQWbdnaPDUkp7BrjFwEkMXLYagIH3JLIDh8ReMAJjlGGkwsD2eIbzLfWL83pvlGFvMcowvKe/lfQDBT2C8wypdnmO8A8AqfZrkli9qWKUx3rExLGWSLgENSbeAiqRLYLzbK603hoUegVX6UDmXgkSeIOcgqDXWOAj\u002BpSnoSdMU9HD5lc9IvVNYBXQM0xlpgvcExSNdTGEVH\u002BVHpLP/GKkQAAAAAElFTkSuQmCC",
+              "WhenOpened": "2025-03-18T11:28:28.584Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
