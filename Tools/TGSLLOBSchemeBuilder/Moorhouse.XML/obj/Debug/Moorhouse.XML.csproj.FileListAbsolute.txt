@@ -1,0 +1,50 @@
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.dll
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.pdb
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.dll
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.xml
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csprojResolveAssemblyReference.cache
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.dll
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.pdb
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.dll
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.pdb
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.dll
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.xml
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csprojAssemblyReference.cache
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CoreCompileInputs.cache
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CopyComplete
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.dll
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.dll
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.dll
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.xml
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CoreCompileInputs.cache
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CopyComplete
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.dll
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.AssemblyReference.cache
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.dll
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.pdb
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.dll
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.xml
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CoreCompileInputs.cache
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CopyComplete
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.dll
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.pdb
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.dll
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.pdb
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.dll
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.xml
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CoreCompileInputs.cache
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CopyComplete
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.dll
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.pdb
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.dll
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\Moorhouse.XML.pdb
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.dll
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\bin\Debug\System.Net.Http.xml
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.AssemblyReference.cache
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CoreCompileInputs.cache
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.csproj.CopyComplete
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.dll
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.XML\obj\Debug\Moorhouse.XML.pdb

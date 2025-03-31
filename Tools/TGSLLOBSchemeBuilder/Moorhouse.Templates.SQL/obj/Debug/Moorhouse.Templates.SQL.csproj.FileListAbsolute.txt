@@ -1,0 +1,33 @@
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.dll
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.pdb
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csprojResolveAssemblyReference.cache
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.dll
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.pdb
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.dll
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.pdb
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csprojAssemblyReference.cache
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csproj.CoreCompileInputs.cache
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.dll
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.dll
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csproj.CoreCompileInputs.cache
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.dll
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csproj.AssemblyReference.cache
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.dll
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.pdb
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csproj.CoreCompileInputs.cache
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.dll
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.pdb
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.dll
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.pdb
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csproj.CoreCompileInputs.cache
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.dll
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.pdb
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.dll
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\bin\Debug\Moorhouse.Templates.SQL.pdb
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csproj.AssemblyReference.cache
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.csproj.CoreCompileInputs.cache
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.dll
+C:\temp\TGSLLOBSchemeBuilder\Moorhouse.Templates.SQL\obj\Debug\Moorhouse.Templates.SQL.pdb

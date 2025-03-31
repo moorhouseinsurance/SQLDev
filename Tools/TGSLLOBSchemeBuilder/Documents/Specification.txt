@@ -1,0 +1,32 @@
+Risk to quote
+WPD runs
+	Create LOB XML.
+	Add Surrogate Keys to each level of XML.
+	Call apply table.
+		SP_Outcome
+			translates dynamic SQL text into a dynamic usp call to LOBCalculator
+			Executes  Procedure LOBCalculator 
+			LOBCalculator 
+				converts XML to variables and tables.
+				Does the assumption refers
+				calculates claims information from the tables
+				(Calculates Employees)
+				Calculates LOB level Refers, Summary, Declines
+				Calls tvf dispatcher with SchemeTableID ,policystartdatetime, policyquotestage ,postcode , variables , tables ,
+				LOBtfvdispatcher 
+					calls appropriate scheme tvf Calculator depending on SchemeTableID
+					tvfCalculator 
+						calculates premiums ,refers ,declines,breakdowns, excesses, endorsements , summarys, product details 
+						Converts these into xml
+						returns a table of the above RESULTS of type SchemeReturnTable
+					return SchemeReturnTable
+				Shreds returned xml from SchemeReturnTable into constituent tables
+				pivots the tables and inserts results into LOBReturnTable
+				Updates LOBReturnTable with LOB level Refers, Summary, Declines
+				Selects LOBReturnTable to wpd
+		Makes results available throughout wpd
+	Outputs results in various narrations.
+	
+
+If there are LOB changes.
+WPD, LOBCalculator and LOBTable Types can be regenerated without affecting anything lower than tvfdispatcher.

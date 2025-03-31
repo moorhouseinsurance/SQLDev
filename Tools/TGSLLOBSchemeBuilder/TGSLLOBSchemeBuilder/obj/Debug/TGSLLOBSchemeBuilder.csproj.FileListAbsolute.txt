@@ -1,0 +1,70 @@
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe.config
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.pdb
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.dll
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.dll
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.pdb
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.pdb
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csprojResolveAssemblyReference.cache
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.exe
+C:\Users\jeremai.smith\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.pdb
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe.config
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.pdb
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.dll
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.dll
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.pdb
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.pdb
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csprojAssemblyReference.cache
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CoreCompileInputs.cache
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CopyComplete
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.exe
+C:\Codebase\gitfked\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe.config
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.dll
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.dll
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.pdb
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.AssemblyReference.cache
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CoreCompileInputs.cache
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CopyComplete
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.exe
+L:\Public\IT\Development\Tickets\Monday\5404882765 - TGSLLOBSchemeBuilder changes\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.pdb
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe.config
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.pdb
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.dll
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.dll
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.pdb
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.pdb
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.AssemblyReference.cache
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CoreCompileInputs.cache
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CopyComplete
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.exe
+L:\Public\IT\Development\Tickets\Monday\5456890098\Release\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.pdb
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe.config
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.pdb
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.dll
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.dll
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.pdb
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.pdb
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.AssemblyReference.cache
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CoreCompileInputs.cache
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CopyComplete
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.exe
+C:\Codebase\Development\GIT\TGSL\LineOfBusiness\Tools\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.pdb
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe.config
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.exe
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\TGSLLOBSchemeBuilder.pdb
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.dll
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.dll
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.Templates.SQL.pdb
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\bin\Debug\Moorhouse.XML.pdb
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.AssemblyReference.cache
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CoreCompileInputs.cache
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.csproj.CopyComplete
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.exe
+C:\temp\TGSLLOBSchemeBuilder\TGSLLOBSchemeBuilder\obj\Debug\TGSLLOBSchemeBuilder.pdb
