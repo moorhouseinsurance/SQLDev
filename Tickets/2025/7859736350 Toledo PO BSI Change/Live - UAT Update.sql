@@ -1,0 +1,113 @@
+DECLARE @Schemes VARCHAR(60);
+
+SET @Schemes = '1594,1605';
+
+DECLARE @Prop_Identified_Cases AS TABLE
+(
+	[MLETPROP_PRPDTAIL_ID] char(32)
+	,[HISTORY_ID] INT
+	,[BUILDINGSSI] money
+)
+
+INSERT INTO @Prop_Identified_Cases
+	SELECT
+		[Prop_Details].[MLETPROP_PRPDTAIL_ID]
+		,[Prop_Details].[HISTORY_ID]
+		,[Prop_Details].[BUILDINGSSI]
+	FROM
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[Customer_Policy_Details] AS [CPD]
+	INNER JOIN
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[USER_MLETPROP_PROPINFO] AS [Prop_Info] ON [Prop_Info].[POLICY_DETAILS_ID] = [CPD].[POLICY_DETAILS_ID]
+	AND
+		[Prop_Info].[HISTORY_ID] = [CPD].[HISTORY_ID]
+	INNER JOIN
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[USER_MLETPROP_PRPDTAIL] AS [Prop_Details] ON [Prop_Details].[MLETPROP_PROPINFO_ID] = [Prop_Info].[MLETPROP_PROPINFO_ID]
+	AND
+		[Prop_Details].[HISTORY_ID] = [Prop_Info].[HISTORY_ID]
+	INNER JOIN
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[USER_MLETPROP_OCCDTAIL] AS [Occ_Details] ON [Occ_Details].[MLETPROP_PRPDTAIL_ID] = [Prop_Details].[MLETPROP_PRPDTAIL_ID]
+	AND
+		[Occ_Details].[HISTORY_ID] = [Prop_Details].[HISTORY_ID]
+	INNER JOIN
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[CUSTOMER_NOTES] ON [CUSTOMER_NOTES].[POLICY_DETAILS_ID] = [CPD].[POLICY_DETAILS_ID]
+	WHERE
+		[CPD].[SCHEMETABLE_ID] IN (SELECT * FROM [dbo].[tvfSplitStringByDelimiter](@Schemes, ','))
+	AND
+		[CPD].[LIVE] = 1
+	AND
+		[CPD].[POLICY_STATUS_ID] = '3AJPUL66'
+	AND
+		[CPD].[POLICYENDDATE] <= GETDATE()+30
+	ORDER BY
+		[CPD].[POLICY_DETAILS_ID]
+		,[CPD].[HISTORY_ID];
+
+DECLARE @Occ_Identified_Cases AS TABLE
+(
+	[MLETPROP_OCCDTAIL_ID] char(32)
+	,[HISTORY_ID] INT
+	,[USERINSTANCE] INT
+	,[OCCUPIED] money
+)
+
+INSERT INTO @Occ_Identified_Cases
+	SELECT
+		[Occ_Details].[MLETPROP_OCCDTAIL_ID]
+		,[Occ_Details].[HISTORY_ID]
+		,[Occ_Details].[USERINSTANCE]
+		,[Occ_Details].[OCCUPIED]
+	FROM
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[Customer_Policy_Details] AS [CPD]
+	INNER JOIN
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[USER_MLETPROP_PROPINFO] AS [Prop_Info] ON [Prop_Info].[POLICY_DETAILS_ID] = [CPD].[POLICY_DETAILS_ID]
+	AND
+		[Prop_Info].[HISTORY_ID] = [CPD].[HISTORY_ID]
+	INNER JOIN
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[USER_MLETPROP_PRPDTAIL] AS [Prop_Details] ON [Prop_Details].[MLETPROP_PROPINFO_ID] = [Prop_Info].[MLETPROP_PROPINFO_ID]
+	AND
+		[Prop_Details].[HISTORY_ID] = [Prop_Info].[HISTORY_ID]
+	INNER JOIN
+		[MHGSQL01\TGSL].[Transactor_Live].[dbo].[USER_MLETPROP_OCCDTAIL] AS [Occ_Details] ON [Occ_Details].[MLETPROP_PRPDTAIL_ID] = [Prop_Details].[MLETPROP_PRPDTAIL_ID]
+	AND
+		[Occ_Details].[HISTORY_ID] = [Prop_Details].[HISTORY_ID]
+	INNER JOIN
+		[Transactor_Live].[dbo].[CUSTOMER_NOTES] ON [CUSTOMER_NOTES].[POLICY_DETAILS_ID] = [CPD].[POLICY_DETAILS_ID]
+	WHERE
+		[CPD].[SCHEMETABLE_ID] IN (SELECT * FROM [dbo].[tvfSplitStringByDelimiter](@Schemes, ','))
+	AND
+		[CPD].[LIVE] = 1
+	AND
+		[CPD].[POLICY_STATUS_ID] = '3AJPUL66'
+	AND
+		[CPD].[POLICYENDDATE] <= GETDATE()+30
+	ORDER BY
+		[CPD].[POLICY_DETAILS_ID]
+		,[CPD].[HISTORY_ID];
+
+UPDATE
+	[USER_MLETPROP_PRPDTAIL]
+SET
+	[USER_MLETPROP_PRPDTAIL].[BUILDINGSSI] = [Prop_Identified_Cases].[BUILDINGSSI]
+FROM
+	[USER_MLETPROP_PRPDTAIL]
+INNER JOIN
+	@Prop_Identified_Cases AS [Prop_Identified_Cases]
+ON
+	[USER_MLETPROP_PRPDTAIL].[MLETPROP_PRPDTAIL_ID] = [Prop_Identified_Cases].[MLETPROP_PRPDTAIL_ID]
+AND
+	[USER_MLETPROP_PRPDTAIL].[HISTORY_ID] = [Prop_Identified_Cases].[HISTORY_ID];
+
+UPDATE
+	[USER_MLETPROP_OCCDTAIL]
+SET
+	[USER_MLETPROP_OCCDTAIL].[OCCUPIED] = [Occ_Identified_Cases].[OCCUPIED]
+FROM
+	[USER_MLETPROP_OCCDTAIL]
+INNER JOIN
+	@Occ_Identified_Cases AS [Occ_Identified_Cases]
+ON
+	[USER_MLETPROP_OCCDTAIL].[MLETPROP_OCCDTAIL_ID] = [Occ_Identified_Cases].[MLETPROP_OCCDTAIL_ID]
+AND
+	[USER_MLETPROP_OCCDTAIL].[HISTORY_ID] = [Occ_Identified_Cases].[HISTORY_ID]
+AND
+	[USER_MLETPROP_OCCDTAIL].[USERINSTANCE] = [Occ_Identified_Cases].[USERINSTANCE];
